@@ -1,0 +1,20 @@
+.title {
+    font-weight: 700;
+    color: var(--titles-color);
+}
+
+.title-general {
+    font-size: 52px;
+}
+
+.title-fz40 {
+    font-size: 40px;
+}
+
+.title-fz32 {
+    font-size: 32px;
+}
+
+.titl-fz20 {
+    font-size: 20px;
+}

@@ -30,9 +30,6 @@
 
 .hero-title {
   margin: 32px 0 0 0;
-  font-weight: 700;
-  font-size: 52px;
-  color: var(--titles-color);
 }
 
 .hero-title p {
@@ -64,20 +61,5 @@
 }
 
 .hero-try {
-  color: var(--dex-demo-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: center;
-  padding: 12px 55px;
   margin: 52px 0 0 0;
-  background: var(--btn-color);
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  transition: 0.5s all;
-}
-
-.hero-try:hover {
-  background-color: var(--btn-hover-color);
 }
