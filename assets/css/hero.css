@@ -1,0 +1,83 @@
+.dexilion-hero {
+  background-color: var(--bg-main-color);
+  min-height: 700px;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hero-about {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--btn-color);
+  text-transform: uppercase;
+}
+
+.hero-text {
+  max-width: 609px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  margin: 32px 0 0 0;
+  font-weight: 700;
+  font-size: 52px;
+  color: var(--titles-color);
+}
+
+.hero-title p {
+  display: flex;
+}
+
+.hero-title span {
+  display: flex;
+  margin: 0 0 0 10px;
+  width: 185px;
+}
+
+.hero-title img {
+  display: block;
+  width: 100%;
+}
+.hero-img {
+  width: 60%;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 0;
+}
+
+.hero-img img {
+  display: block;
+  width: 100%;
+}
+
+.hero-try {
+  color: var(--dex-demo-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  padding: 12px 55px;
+  margin: 52px 0 0 0;
+  background: var(--btn-color);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.hero-try:hover {
+  background-color: var(--btn-hover-color);
+}

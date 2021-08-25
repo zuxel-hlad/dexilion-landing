@@ -1,0 +1,19 @@
+@import './header.css';
+@import './hero.css';
+
+:root {
+  --bg-main-color: #111222;
+  --main-gray-color: #a4a5af;
+  --main-border-color: #282942;
+  --dex-demo-color: #111222;
+  --btn-color: #ffb200;
+  --btn-hover-color: #ffc233;
+  --titles-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
