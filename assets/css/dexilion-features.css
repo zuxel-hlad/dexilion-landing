@@ -1,5 +1,5 @@
 .dexilion-features {
-  padding: 120px 0 120px 0;
+  padding: 0 0 120px 0;
   background-color: var(--bg-main-color);
 }
 
@@ -10,6 +10,7 @@
 .dexilion-features-title::before {
   content: '02';
   left: 257px;
+  top: -19px;
   display: block;
   position: absolute;
   color: var(--btn-color);

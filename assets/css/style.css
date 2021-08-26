@@ -4,6 +4,7 @@
 @import './hero.css';
 @import './about-dexilion.css';
 @import './dexilion-features.css';
+@import './dexilion-how.css';
 
 :root {
   --bg-main-color: #111222;

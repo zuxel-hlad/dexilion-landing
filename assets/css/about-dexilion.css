@@ -9,6 +9,7 @@
 
 .about-dexilion-title::before {
   content: '01';
+  top: -19px;
   left: 305px;
   display: block;
   position: absolute;

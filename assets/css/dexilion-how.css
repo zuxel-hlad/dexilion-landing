@@ -1,0 +1,62 @@
+.dexilion-how {
+  padding: 0 0 120px 0;
+  background-color: var(--bg-main-color);
+}
+
+.dexilion-how-title {
+  position: relative;
+}
+
+.dexilion-how-title:before {
+  content: '03';
+  top: -19px;
+  left: 262px;
+  display: block;
+  position: absolute;
+  color: var(--btn-color);
+  font-size: 16px;
+}
+
+.dexilion-steps-wrapper {
+  margin: 80px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dexilion-step-item {
+  display: flex;
+}
+
+.step-image-wrapper {
+  width: 50%;
+}
+
+.step-image-general {
+  position: relative;
+}
+
+.step-image-general.connect-wallet {
+  max-width: 590px;
+}
+
+.step-image-general img {
+  width: 100%;
+}
+
+.step-sub-img {
+  position: absolute;
+}
+
+.step-sub-img img {
+  width: 100%;
+}
+
+.step-sub-img.connect-wallet {
+  max-width: 441px;
+  top: 190px;
+  right: -40px;
+}
+
+.step-text-wrapper {
+  width: 50%;
+}
