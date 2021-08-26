@@ -34,6 +34,7 @@
 
 .step-image-general {
   position: relative;
+  cursor: pointer;
 }
 
 .step-image-general img {
@@ -42,6 +43,7 @@
 
 .step-sub-img {
   position: absolute;
+  cursor: pointer;
 }
 
 .step-sub-img img {
@@ -82,6 +84,12 @@
 .step-icon {
   width: 40px;
   margin: 0 26px 0 0;
+  cursor: pointer;
+}
+
+.step-icon-link {
+  display: block;
+  text-decoration: none;
 }
 
 .step-icon:last-child {
@@ -108,6 +116,11 @@
   max-width: 441px;
   bottom: -35px;
   right: -40px;
+  transition: 0.5s all;
+}
+
+.step-image-general.connect-wallet:hover .step-sub-img.connect-wallet {
+  transform: translate(405px, -190px);
 }
 
 .dexilion-step-item.deposit-funds {
@@ -124,6 +137,12 @@
   top: 40px;
   right: -236px;
   z-index: -1;
+  transition: 0.5s all;
+}
+
+.step-image-general.deposit-funds:hover .step-sub-img.deposit-funds {
+  z-index: 1;
+  transform: translate(-633px, -40px);
 }
 
 .dexilion-step-item.sell-derivatives {
@@ -138,6 +157,11 @@
   max-width: 219px;
   right: -40px;
   top: 40px;
+  transition: 0.5s all;
+}
+
+.step-image-general.sell-derivatives:hover .step-sub-img.sell-derivatives {
+  transform: translate(183px, -38px);
 }
 
 .dexilion-step-item.track-position {
