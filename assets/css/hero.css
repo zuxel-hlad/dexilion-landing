@@ -43,7 +43,6 @@
 }
 
 .hero-title img {
-  display: block;
   width: 100%;
 }
 .hero-img {
@@ -56,8 +55,7 @@
 }
 
 .hero-img img {
-  display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 .hero-try {

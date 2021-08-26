@@ -37,12 +37,15 @@
   width: 88px;
 }
 
+.about-card-img {
+  max-width: 100%;
+}
+
 .about-card:hover {
   background-color: var(--item-bg-hover);
 }
 
 .about-card-logo {
-  display: block;
   width: 100%;
 }
 

@@ -38,7 +38,7 @@
 }
 
 .step-image-general img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .step-sub-img {
@@ -47,7 +47,7 @@
 }
 
 .step-sub-img img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .step-text-wrapper {
@@ -97,7 +97,7 @@
 }
 
 .step-icon img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .reversed .step-image-wrapper {
