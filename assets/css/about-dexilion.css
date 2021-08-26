@@ -1,0 +1,57 @@
+.about-dexilion {
+  background-color: var(--bg-main-color);
+  padding: 121px 0 120px 0;
+}
+
+.about-dexilion-title {
+  position: relative;
+}
+
+.about-dexilion-title::before {
+  content: '01';
+  left: 305px;
+  display: block;
+  position: absolute;
+  color: var(--btn-color);
+  font-size: 16px;
+}
+
+.about-card-wrapper {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 630px;
+  padding: 40px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.about-card-logo {
+  width: 88px;
+}
+
+.about-card:hover {
+  background-color: var(--item-bg-hover);
+}
+
+.about-card-logo {
+  display: block;
+  width: 100%;
+}
+
+.about-card-title {
+  margin: 20px 0 0 0;
+}
+
+.about-card-descr {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--main-gray-color);
+}

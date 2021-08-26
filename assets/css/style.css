@@ -2,6 +2,8 @@
 @import './titles.css';
 @import './header.css';
 @import './hero.css';
+@import './about-dexilion.css';
+@import './dexilion-features.css';
 
 :root {
   --bg-main-color: #111222;
@@ -11,6 +13,7 @@
   --btn-color: #ffb200;
   --btn-hover-color: #ffc233;
   --titles-color: #fff;
+  --item-bg-hover: #16172c;
 }
 
 .container {
