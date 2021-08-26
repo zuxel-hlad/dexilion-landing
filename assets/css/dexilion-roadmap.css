@@ -1,0 +1,65 @@
+.dexilion-roadmap {
+  padding: 0 0 120px 0;
+  background-color: var(--bg-main-color);
+}
+
+.dexilion-roadmap-title {
+  position: relative;
+}
+
+.dexilion-roadmap-title:before {
+  content: '04';
+  top: -19px;
+  left: 188px;
+  display: block;
+  position: absolute;
+  color: var(--btn-color);
+  font-size: 16px;
+}
+
+.roadmap-progress-wrapper {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.progress-item {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 256px;
+  min-height: 206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+  cursor: pointer;
+  transition: 0.5s all;
+  border: 1px solid transparent;
+}
+
+.progress-item:hover {
+  background-color: var(--item-bg-hover);
+  border: 1px solid var(--main-border-color);
+  border-radius: 4px;
+}
+
+.progress-item-year {
+  font-size: 16px;
+  display: block;
+  line-height: 24px;
+  color: var(--btn-color);
+}
+
+.progress-item-title {
+  margin: 12px 0 0 0;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.progress-item-descr {
+  color: var(--main-gray-color);
+  font-size: 16px;
+  line-height: 24px;
+}
