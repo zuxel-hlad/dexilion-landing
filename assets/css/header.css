@@ -16,6 +16,11 @@
   width: 98px;
 }
 
+.header-logo-link {
+  display: block;
+  text-decoration: none;
+}
+
 .header-logo img {
   width: 100%;
 }
