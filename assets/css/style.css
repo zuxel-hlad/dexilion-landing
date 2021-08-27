@@ -10,6 +10,13 @@
 @import './dexilion-roadmap.css';
 @import './footer.css';
 
+.section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 :root {
   --bg-main-color: #111222;
   --main-gray-color: #a4a5af;
@@ -19,6 +26,7 @@
   --btn-hover-color: #ffc233;
   --titles-color: #fff;
   --item-bg-hover: #16172c;
+  --footer-color: #16172c;
 }
 
 .container {
