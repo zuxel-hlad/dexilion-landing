@@ -1,6 +1,7 @@
 .about-dexilion {
   background-color: var(--bg-main-color);
   padding: 121px 0 120px 0;
+  min-height: 100vh;
 }
 
 .about-dexilion-title {
