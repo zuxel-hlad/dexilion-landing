@@ -7,6 +7,7 @@
 @import './dexilion-features.css';
 @import './dexilion-how.css';
 @import './dexilion-roadmap.css';
+@import './footer.css';
 
 :root {
   --bg-main-color: #111222;

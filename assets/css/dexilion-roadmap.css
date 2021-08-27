@@ -44,6 +44,10 @@
   border-radius: 4px;
 }
 
+.progress-item:hover .progress-item-descr {
+  color: #fff;
+}
+
 .progress-item-year {
   font-size: 16px;
   display: block;
@@ -55,10 +59,11 @@
   margin: 12px 0 0 0;
   font-size: 20px;
   line-height: 30px;
-  color: #fff;
+  color: var(--titles-color);
 }
 
 .progress-item-descr {
+  transition: 0.5s all;
   color: var(--main-gray-color);
   font-size: 16px;
   line-height: 24px;

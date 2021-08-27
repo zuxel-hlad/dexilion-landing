@@ -32,19 +32,19 @@
   margin: 32px 0 0 0;
 }
 
-.hero-title p {
+.hero-title-sub-text {
   display: flex;
 }
 
-.hero-title span {
-  display: flex;
-  margin: 0 0 0 10px;
+.hero-title-img {
   width: 185px;
+  margin: 0 0 0 10px;
 }
 
-.hero-title img {
-  width: 100%;
+.hero-title-img img {
+  max-width: 100%;
 }
+
 .hero-img {
   width: 60%;
   position: absolute;

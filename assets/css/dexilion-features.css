@@ -35,6 +35,10 @@
   background-color: var(--item-bg-hover);
 }
 
+.features-item:hover .features-item-descr {
+  color: #fff;
+}
+
 .features-item-title-wrapper {
   width: 50%;
 }
@@ -54,4 +58,5 @@
   font-size: 20px;
   line-height: 30px;
   color: var(--main-gray-color);
+  transition: 0.5s all;
 }

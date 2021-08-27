@@ -45,6 +45,10 @@
   background-color: var(--item-bg-hover);
 }
 
+.about-card:hover .about-card-descr {
+  color: #fff;
+}
+
 .about-card-logo {
   width: 100%;
 }
@@ -58,4 +62,5 @@
   font-size: 20px;
   line-height: 28px;
   color: var(--main-gray-color);
+  transition: 0.5s all;
 }
