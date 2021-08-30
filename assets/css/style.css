@@ -10,14 +10,9 @@
 @import './dexilion-roadmap.css';
 @import './footer.css';
 
-body,
-html {
-  height: 100vh;
-}
-
 body {
   transform: translate3d(0px, 0px, 0px);
-  transition: all 1.5s ease-in-out;
+  transition: all 1.8s ease-in-out;
 }
 
 :root {

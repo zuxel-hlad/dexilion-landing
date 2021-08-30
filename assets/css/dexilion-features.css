@@ -1,10 +1,9 @@
 .dexilion-features {
-  padding: 120px 0 0 0;
   background-color: var(--bg-main-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .dexilion-features-title {
@@ -25,6 +24,25 @@
   margin: 80px 0 0 0;
   border: 1px solid var(--main-border-color);
   border-radius: 8px;
+  overflow-y: scroll;
+  height: 535px;
+}
+
+/* Scrollbar Styling */
+.dexilion-features ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dexilion-features ::-webkit-scrollbar-track {
+  background-color: var(--main-border-color);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.dexilion-features ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--main-gray-color);
 }
 
 .features-item {

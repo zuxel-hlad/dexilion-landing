@@ -1,7 +1,9 @@
 .footer {
   padding: 74px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--footer-color);
-  min-height: 496px;
 }
 
 .footer-wrapper {

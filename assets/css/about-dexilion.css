@@ -1,10 +1,9 @@
 .about-dexilion {
   background-color: var(--bg-main-color);
-  min-height: 100vh;
-  padding: 120px 0 0 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .about-dexilion-title {
