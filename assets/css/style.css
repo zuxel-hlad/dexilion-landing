@@ -10,13 +10,16 @@
 @import './dexilion-roadmap.css';
 @import './footer.css';
 
-.section {
-  display: flex;
-  width: 100%;
+body,
+html {
   height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
+
+body {
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 1.5s ease-in-out;
+}
+
 :root {
   --bg-main-color: #111222;
   --main-gray-color: #a4a5af;

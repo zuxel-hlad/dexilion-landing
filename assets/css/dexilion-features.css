@@ -1,6 +1,10 @@
 .dexilion-features {
-  padding: 0 0 120px 0;
+  padding: 120px 0 0 0;
   background-color: var(--bg-main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .dexilion-features-title {
