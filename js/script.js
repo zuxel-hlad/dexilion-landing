@@ -1,5 +1,7 @@
-new fullpage('#fullpage', {
-    licenseKey: 'YOUR_KEY_HERE',
+const page = new fullpage('.fullpage-wrapper', {
+  licenseKey: 'YOUR_KEY_HERE',
   scrollOverflow: true,
-  scrollOverflowReset: true,
+  scrollingSpeed: 1500,
+  css3: true,
+  easingcss3: 'ease-out',
 });

@@ -12,6 +12,7 @@
 
 .fullpage-wrapper {
   background-color: var(--bg-main-color);
+  scroll-behavior: smooth;
 }
 
 :root {
