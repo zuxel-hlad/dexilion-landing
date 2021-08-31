@@ -2,6 +2,7 @@
   background-color: var(--bg-main-color);
   min-height: 700px;
   height: calc(100vh - 80px);
+  /* height: 100vh; */
   display: flex;
   align-items: center;
 }

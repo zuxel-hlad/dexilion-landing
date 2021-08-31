@@ -10,9 +10,8 @@
 @import './dexilion-roadmap.css';
 @import './footer.css';
 
-body {
-  transform: translate3d(0px, 0px, 0px);
-  transition: all 1.8s ease-in-out;
+.fullpage-wrapper {
+  background-color: var(--bg-main-color);
 }
 
 :root {

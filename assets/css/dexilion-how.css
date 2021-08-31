@@ -1,26 +1,10 @@
 .dexilion-how {
-  height: 100vh;
+  padding: 120px 0 120px 0;
+  min-height: 100vh;
   background-color: var(--bg-main-color);
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-/* Scrollbar Styling */
-.dexilion-how ::-webkit-scrollbar {
-  width: 10px;
-}
-
-.dexilion-how ::-webkit-scrollbar-track {
-  background-color: var(--main-border-color);
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-.dexilion-how ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: var(--main-gray-color);
+  align-items: flex-start;
 }
 
 .dexilion-how-title {
@@ -41,8 +25,6 @@
   margin: 80px 0 0 0;
   display: flex;
   flex-wrap: wrap;
-  height: 490px;
-  overflow-y: scroll;
 }
 
 .dexilion-step-item {
