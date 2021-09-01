@@ -9,11 +9,13 @@
 @import './dexilion-how.css';
 @import './dexilion-roadmap.css';
 @import './footer.css';
+@import './anumations.css';
 
 .fullpage-wrapper {
   background-color: var(--bg-main-color);
-  scroll-behavior: smooth;
 }
+
+
 
 :root {
   --bg-main-color: #111222;
