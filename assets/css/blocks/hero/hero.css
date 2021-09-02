@@ -1,8 +1,7 @@
 .dexilion-hero {
   background-color: var(--bg-main-color);
   min-height: 700px;
-  height: calc(100vh - 80px);
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -76,6 +75,7 @@
 }
 
 .hero-img-line.line-first {
+  visibility: hidden;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
@@ -83,6 +83,7 @@
 }
 
 .hero-img-line.line-second {
+  visibility: hidden;
   z-index: 2;
   top: 50%;
   transform: translateY(-50%);
@@ -90,12 +91,50 @@
 }
 
 .hero-img-line.line-third {
+  visibility: hidden;
   z-index: 3;
   top: 50%;
   transform: translateY(-50%);
   left: 376px;
 }
 
+.hero-img-line svg {
+  transform: rotate(180deg);
+  max-width: 100%;
+}
+
+.hero-img-line svg rect {
+  width: 107px;
+}
+
+.hero-img-line.animated {
+  visibility: visible;
+}
+
+.hero-img-line.line-first svg rect {
+  animation: lineup 1s ease-out;
+}
+
+.line-second rect {
+  animation: lineup 1s ease-out 0.5s;
+}
+
+.line-third rect {
+  animation: lineup 1s ease-out 1s;
+}
+
 .hero-try {
   margin: 52px 0 0 0;
+}
+
+.hero-img-round svg {
+  animation: scale 0.7s ease-out;
+}
+
+.animation-element {
+  opacity: 0;
+}
+
+.animation-element.animated {
+  opacity: 1;
 }
