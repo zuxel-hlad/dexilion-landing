@@ -10,5 +10,6 @@ new fullpage('.fullpage-wrapper', {
 });
 
 const round = document.querySelector('.hero-img-round');
-
+const stars = document.querySelector('.hero-img-stars');
 setTimeout(() => round.classList.add('active'), 2000);
+setTimeout(() => stars.classList.add('active'), 1850);

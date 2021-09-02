@@ -42,3 +42,16 @@
     transform: translateY(0);
   }
 }
+
+@keyframes rain {
+  from {
+    opacity: 0;
+    transform: translate(40%, -40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  
+}

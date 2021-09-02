@@ -139,3 +139,12 @@
 .hero-img-round svg {
   animation: scale 1.5s ease-in-out 1s;
 }
+
+.hero-img-stars {
+  visibility: hidden;
+}
+.hero-img-stars.active {
+  visibility: visible;
+  position: absolute;
+  animation: rain 2s ease-out;
+}
