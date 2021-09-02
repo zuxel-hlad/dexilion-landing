@@ -1,21 +1,18 @@
-@import './fonts.css';
-@import './animate.min.css';
-@import './btns.css';
-@import './titles.css';
-@import './header.css';
-@import './hero.css';
-@import './about-dexilion.css';
-@import './dexilion-features.css';
-@import './dexilion-how.css';
-@import './dexilion-roadmap.css';
-@import './footer.css';
-@import './anumations.css';
+@import './base/fonts.css';
+@import './blocks/btns/btns.css';
+@import './blocks/titles/titles.css';
+@import './blocks/header/header.css';
+@import './blocks/hero/hero.css';
+@import './blocks/about-dexilion/about-dexilion.css';
+@import './blocks/dexilion-features/dexilion-features.css';
+@import './blocks/dexilion-how/dexilion-how.css';
+@import './blocks/dexilion-roadmap/dexilion-roadmap.css';
+@import './blocks/footer/footer.css';
+@import './base/animations.css';
 
 .fullpage-wrapper {
   background-color: var(--bg-main-color);
 }
-
-
 
 :root {
   --bg-main-color: #111222;

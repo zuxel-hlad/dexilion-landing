@@ -38,17 +38,17 @@
 } */
 
 .section.active .show {
-  animation: 1.2s ease-in 1s both running show;
+  animation: show 0.7s ease-out;
 }
 
 @keyframes show {
   from {
     opacity: 0;
-    left: -999px;
+    transform: translateX(-100%);
   }
 
   to {
-    left: 0;
+    transform: translateX(0);
     opacity: 1;
   }
 }
