@@ -25,7 +25,11 @@
 .hero-text {
   max-width: 609px;
   position: relative;
-  z-index: 1;
+  left: -100%;
+}
+
+.hero-text.show {
+  left: 0;
 }
 
 .hero-title {
@@ -63,6 +67,7 @@
 .hero-img-round {
   z-index: 4;
   max-width: 320px;
+  max-height: 320px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -138,6 +143,11 @@
 
 .hero-img-round svg {
   animation: scale 1.5s ease-in-out 1s;
+  -webkit-box-shadow: 0px 0px 100px 27px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 100px 27px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 100px 27px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .hero-img-stars {
@@ -146,5 +156,5 @@
 .hero-img-stars.active {
   visibility: visible;
   position: absolute;
-  animation: rain 2s ease-out;
+  animation: rain 0.5s ease-out;
 }
