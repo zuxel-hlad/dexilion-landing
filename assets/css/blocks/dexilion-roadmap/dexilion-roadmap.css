@@ -1,7 +1,7 @@
 .dexilion-roadmap {
-  padding: 200px 0 0 0;
+  padding: 200px 0 120px 0;
   background-color: var(--bg-main-color);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -9,16 +9,11 @@
 
 .dexilion-roadmap-title {
   position: relative;
+  display: inline-block;
 }
 
-.dexilion-roadmap-title:before {
-  content: '04';
-  top: -19px;
-  left: 188px;
-  display: block;
-  position: absolute;
-  color: var(--btn-color);
-  font-size: 16px;
+.dexilion-roadmap-title .dexilion-counter {
+  left: 185px;
 }
 
 .roadmap-progress-wrapper {

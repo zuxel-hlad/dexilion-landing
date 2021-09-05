@@ -20,19 +20,19 @@ new fullpage('.fullpage-wrapper', {
     if (destination.index === 0) {
       heroAnimations();
     }
-    if (destination.index === 1) {
-      setTimeout(() => {
-        document.querySelector('.first').classList.add('active');
-      });
-    }
   },
 });
 
-const el = document.querySelector('.first');
+/* title numbers animation */
 
-function showMessage() {
-  console.log('animation end');
-  el.classList.add()
+const first = document.querySelector('.first .hide-block');
+const second = document.querySelector('.second .hide-block');
+
+function numbersAnimation() {
+  first.classList.add('active');
+  second.classList.add('active');
 }
 
-el.addEventListener('animationend', showMessage);
+first.addEventListener('animationend', numbersAnimation);
+second.addEventListener('animationend', numbersAnimation);
+/* title numbers animation */

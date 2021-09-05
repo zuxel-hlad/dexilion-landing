@@ -6,6 +6,74 @@
   animation: show 1s ease-out;
 }
 
+.section.active .first .hide-block {
+  animation: size-animation 1.5s linear;
+}
+
+.section.active .second .hide-block {
+  animation: size-animation 2s linear;
+}
+
+.dexilion-counter {
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.first {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hide-block {
+  position: absolute;
+  top: 0;
+  background-color: var(--bg-main-color);
+  width: 100%;
+  height: 100%;
+}
+
+.first .hide-block.active {
+  height: 0;
+}
+
+.first span {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--btn-color);
+}
+
+.second {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second span {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--btn-color);
+}
+
+.second .hide-block.active {
+  height: 0;
+}
 
 @keyframes size-animation {
   from {

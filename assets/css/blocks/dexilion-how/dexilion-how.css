@@ -9,22 +9,29 @@
 
 .dexilion-how-title {
   position: relative;
+  display: inline-block;
 }
 
-.dexilion-how-title:before {
-  content: '03';
-  top: -19px;
-  left: 262px;
-  display: block;
-  position: absolute;
-  color: var(--btn-color);
-  font-size: 16px;
+.dexilion-how-title .dexilion-counter {
+  left: 255px;
 }
 
 .dexilion-steps-wrapper {
   margin: 80px 0 0 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+.dexilion-how.step-2,
+.dexilion-how.step-3,
+.dexilion-how.step-4 {
+  padding: 80px 0 0 0;
+}
+
+.dexilion-how.step-2 .dexilion-steps-wrapper,
+.dexilion-how.step-3 .dexilion-steps-wrapper,
+.dexilion-how.step-4 .dexilion-steps-wrapper {
+  margin: 0;
 }
 
 .dexilion-step-item {

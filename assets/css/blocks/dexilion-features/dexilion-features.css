@@ -9,17 +9,9 @@
 
 .dexilion-features-title {
   position: relative;
+  display: inline-block;
 }
 
-.dexilion-features-title::before {
-  content: '02';
-  left: 257px;
-  top: -19px;
-  display: block;
-  position: absolute;
-  color: var(--btn-color);
-  font-size: 16px;
-}
 
 .features-items-wrapper {
   margin: 80px 0 0 0;
