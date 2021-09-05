@@ -14,6 +14,14 @@
   animation: size-animation 2s linear;
 }
 
+.section.active .up-block.block-first {
+  animation: up 1.5s ease-in-out;
+}
+
+.section.active .up-block.block-second {
+  animation: up 2s ease-in-out;
+}
+
 .dexilion-counter {
   width: 20px;
   height: 20px;

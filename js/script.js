@@ -36,3 +36,7 @@ function numbersAnimation() {
 first.addEventListener('animationend', numbersAnimation);
 second.addEventListener('animationend', numbersAnimation);
 /* title numbers animation */
+
+/* up-blocks animations */
+
+/* up-blocks animations */
