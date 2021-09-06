@@ -7,20 +7,21 @@
 }
 
 .section.active .first .hide-block {
-  animation: size-animation 1.5s linear;
+  animation: size-animation 2.5s linear;
 }
 
 .section.active .second .hide-block {
-  animation: size-animation 2s linear;
+  animation: size-animation 4s linear;
 }
 
-.section.active .up-block.block-first {
-  animation: up 1.5s ease-in-out;
+.section.active .about.up-block.block-first {
+  animation: up 1.2s linear;
 }
 
-.section.active .up-block.block-second {
-  animation: up 2s ease-in-out;
+.section.active .about.up-block.block-second {
+  animation: up 1.5s linear;
 }
+
 
 .dexilion-counter {
   width: 20px;

@@ -12,19 +12,35 @@
   display: inline-block;
 }
 
-
 .features-items-wrapper {
   margin: 80px 0 0 0;
-  border: 1px solid var(--main-border-color);
-  border-radius: 8px;
 }
 
 .features-item {
   display: flex;
-  border-bottom: 1px solid var(--main-border-color);
+  min-height: 156px;
+  border: 1px solid var(--main-border-color);
+  border-collapse: collapse;
   padding: 40px;
   cursor: pointer;
   transition: 0.5s all;
+  transform: translateY(120%);
+  opacity: 0;
+}
+
+.features-item.active {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+.features-item:first-child {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.features-item:last-child {
+  border-bottom: 1px solid var(--main-border-color);
+  border-radius: 0px 0px 8px 8px;
 }
 
 .features-item:hover {
