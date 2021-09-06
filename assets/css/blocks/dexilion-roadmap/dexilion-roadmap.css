@@ -35,6 +35,14 @@
   cursor: pointer;
   transition: 0.5s all;
   border: 1px solid transparent;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.progress-item.active {
+  transition: 0.8s all;
+  opacity: 1;
+  visibility: visible;
 }
 
 .progress-item:hover {

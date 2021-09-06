@@ -41,6 +41,15 @@
 
 .step-image-wrapper {
   width: 50%;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.step-image-wrapper.active {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.8s all;
 }
 
 .step-image-general {
@@ -64,6 +73,15 @@
 .step-text-wrapper {
   width: 50%;
   padding: 55px 0 0 160px;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.step-text-wrapper.active {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.8s all;
 }
 
 .step-title {

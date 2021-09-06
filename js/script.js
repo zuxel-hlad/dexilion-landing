@@ -1,7 +1,10 @@
+/* getting selectors */
 let $isAnimatedEl = $('.hero-text');
 const keyItems = document.querySelectorAll('.features-item');
 const dexilionFeatures = document.querySelector('.dexilion-features');
+/* getting selectors */
 
+/* adding hero section animations */
 const heroAnimations = () => {
   setTimeout(() => {
     document.querySelector('.hero-img-round').classList.add('active');
@@ -11,6 +14,35 @@ const heroAnimations = () => {
     () => document.querySelector('.hero-text').classList.add('show'),
     2500
   );
+};
+
+/* adding hero section animations end*/
+
+const animationEl = (index) => {
+  setTimeout(
+    () =>
+      document
+        .querySelector(`.dexilion-how.step-${index} .step-image-wrapper`)
+        .classList.add('active'),
+    0
+  );
+
+  setTimeout(
+    () =>
+      document
+        .querySelector(`.dexilion-how.step-${index} .step-text-wrapper`)
+        .classList.add('active'),
+    100
+  );
+};
+
+const removeAllStepsAnimation = () => {
+  document
+    .querySelectorAll('.dexilion-how .step-image-wrapper')
+    .forEach((item) => item.classList.remove('active'));
+  document
+    .querySelectorAll('.dexilion-how .step-text-wrapper')
+    .forEach((item) => item.classList.remove('active'));
 };
 let lastScrollTop = 0;
 let scrollToggle = false;
@@ -34,6 +66,23 @@ new fullpage('.fullpage-wrapper', {
           itemAddMoreAnimate(keyItems);
         }
       });
+    }
+    if (destination.index === 3) {
+      animationEl(1);
+    }
+    if (destination.index === 4) {
+      animationEl(2);
+    }
+    if (destination.index === 5) {
+      animationEl(3);
+    }
+    if (destination.index === 6) {
+      animationEl(4);
+    } else {
+      removeAllStepsAnimation();
+    }
+    if (destination.index === 7) {
+      showProgressItems();
     }
   },
 });
@@ -77,3 +126,26 @@ function deleteItemAnimate(items) {
 }
 
 /* key-features item  animations */
+
+/* roadmap animation */
+const progressItem = document.querySelectorAll('.progress-item');
+const evenIndex = [];
+const oddIndex = [];
+
+progressItem.forEach((item, index) => {
+  if (index % 2 === 0) {
+    evenIndex.push(index);
+  } else {
+    oddIndex.push(index);
+  }
+});
+
+function showProgressItems() {
+  evenIndex.forEach((item) => {
+    progressItem[item].classList.add('active');
+  });
+  oddIndex.forEach((item) => {
+    progressItem[item].classList.add('active');
+  });
+}
+/* roadmap animation */

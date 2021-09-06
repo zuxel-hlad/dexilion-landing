@@ -7,11 +7,11 @@
 }
 
 .section.active .first .hide-block {
-  animation: size-animation 2.5s linear;
+  animation: size-animation 2s linear;
 }
 
 .section.active .second .hide-block {
-  animation: size-animation 4s linear;
+  animation: size-animation 2.5s linear;
 }
 
 .section.active .about.up-block.block-first {
