@@ -10,6 +10,11 @@
 .about-dexilion-title {
   position: relative;
   display: inline-block;
+  left: -100%;
+}
+
+.about-dexilion-title.active {
+  left: 0;
 }
 
 .about-card-wrapper {
@@ -26,6 +31,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: 0.5s all;
+  transform: translateY(150%);
 }
 
 .about-card-logo {
