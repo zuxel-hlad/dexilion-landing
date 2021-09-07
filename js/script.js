@@ -3,6 +3,10 @@ let $isAnimatedEl = $('.hero-text');
 const keyItems = document.querySelectorAll('.features-item');
 const dexilionFeatures = document.querySelector('.dexilion-features');
 const progressItem = document.querySelectorAll('.progress-item');
+const footerPromo = document.querySelector('.footer-promo');
+const footerInformationItem = document.querySelectorAll(
+  '.footer-information-item'
+);
 /* getting selectors */
 
 /* adding hero section animations */
@@ -87,6 +91,12 @@ new fullpage('.fullpage-wrapper', {
     } else {
       deleteItemAnimate(progressItem);
     }
+    if (destination.index === 8) {
+      addFooterAnimate();
+    } else {
+      footerPromo.classList.remove('active');
+      deleteItemAnimate(footerInformationItem);
+    }
   },
 });
 
@@ -144,3 +154,13 @@ function showProgressItemsEven() {
   setTimeout(() => progressItem[4].classList.add('active'), 1300);
 }
 /* roadmap animation */
+
+/* footer animation */
+function addFooterAnimate() {
+  setTimeout(() => footerPromo.classList.add('active'),0);
+  setTimeout(() => footerInformationItem[0].classList.add('active'), 200);
+  setTimeout(() => footerInformationItem[1].classList.add('active'), 300);
+  setTimeout(() => footerInformationItem[2].classList.add('active'), 400);
+  setTimeout(() => footerInformationItem[3].classList.add('active'), 500);
+}
+/* footer animation end */
