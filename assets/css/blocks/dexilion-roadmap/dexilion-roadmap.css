@@ -40,9 +40,9 @@
 }
 
 .progress-item.active {
-  transition: 0.8s all;
   opacity: 1;
   visibility: visible;
+  transition: 0.5s all;
 }
 
 .progress-item:hover {

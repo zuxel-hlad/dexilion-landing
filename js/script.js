@@ -82,7 +82,9 @@ new fullpage('.fullpage-wrapper', {
       removeAllStepsAnimation();
     }
     if (destination.index === 7) {
-      showProgressItems();
+      showProgressItemsEven();
+    } else {
+      showProgressItemsRemove();
     }
   },
 });
@@ -129,23 +131,20 @@ function deleteItemAnimate(items) {
 
 /* roadmap animation */
 const progressItem = document.querySelectorAll('.progress-item');
-const evenIndex = [];
-const oddIndex = [];
 
-progressItem.forEach((item, index) => {
-  if (index % 2 === 0) {
-    evenIndex.push(index);
-  } else {
-    oddIndex.push(index);
-  }
-});
+function showProgressItemsEven() {
+  setTimeout(() => progressItem[0].classList.add('active'), 500);
+  setTimeout(() => progressItem[5].classList.add('active'), 600);
+  setTimeout(() => progressItem[1].classList.add('active'), 700);
+  setTimeout(() => progressItem[6].classList.add('active'), 800);
+  setTimeout(() => progressItem[2].classList.add('active'), 900);
+  setTimeout(() => progressItem[7].classList.add('active'), 1000);
+  setTimeout(() => progressItem[3].classList.add('active'), 1100);
+  setTimeout(() => progressItem[8].classList.add('active'), 1200);
+  setTimeout(() => progressItem[4].classList.add('active'), 1300);
+}
 
-function showProgressItems() {
-  evenIndex.forEach((item) => {
-    progressItem[item].classList.add('active');
-  });
-  oddIndex.forEach((item) => {
-    progressItem[item].classList.add('active');
-  });
+function showProgressItemsRemove() {
+  progressItem.forEach((item) => item.classList.remove('active'));
 }
 /* roadmap animation */
