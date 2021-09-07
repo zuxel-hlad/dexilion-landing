@@ -2,6 +2,7 @@
 let $isAnimatedEl = $('.hero-text');
 const keyItems = document.querySelectorAll('.features-item');
 const dexilionFeatures = document.querySelector('.dexilion-features');
+const progressItem = document.querySelectorAll('.progress-item');
 /* getting selectors */
 
 /* adding hero section animations */
@@ -84,7 +85,7 @@ new fullpage('.fullpage-wrapper', {
     if (destination.index === 7) {
       showProgressItemsEven();
     } else {
-      showProgressItemsRemove();
+      deleteItemAnimate(progressItem);
     }
   },
 });
@@ -130,7 +131,6 @@ function deleteItemAnimate(items) {
 /* key-features item  animations */
 
 /* roadmap animation */
-const progressItem = document.querySelectorAll('.progress-item');
 
 function showProgressItemsEven() {
   setTimeout(() => progressItem[0].classList.add('active'), 500);
@@ -142,9 +142,5 @@ function showProgressItemsEven() {
   setTimeout(() => progressItem[3].classList.add('active'), 1100);
   setTimeout(() => progressItem[8].classList.add('active'), 1200);
   setTimeout(() => progressItem[4].classList.add('active'), 1300);
-}
-
-function showProgressItemsRemove() {
-  progressItem.forEach((item) => item.classList.remove('active'));
 }
 /* roadmap animation */
