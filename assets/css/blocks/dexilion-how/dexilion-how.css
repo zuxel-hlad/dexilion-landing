@@ -10,10 +10,11 @@
 .dexilion-how-title {
   position: relative;
   display: inline-block;
+  left: -100%;
 }
 
-.dexilion-how-title .dexilion-counter {
-  left: 255px;
+.dexilion-how-title.active {
+  left: 0;
 }
 
 .dexilion-steps-wrapper {
@@ -41,20 +42,20 @@
 
 .step-image-wrapper {
   width: 50%;
-  transform: translateY(120%);
-  opacity: 0;
-  transition: 0.5s all;
-}
-
-.step-image-wrapper.active {
-  transform: translateY(0%);
-  opacity: 1;
-  transition: 0.8s all;
 }
 
 .step-image-general {
   position: relative;
   cursor: pointer;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.step-image-general.active {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.8s all;
 }
 
 .step-image-general img {
@@ -64,6 +65,14 @@
 .step-sub-img {
   position: absolute;
   cursor: pointer;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.step-sub-img.active {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .step-sub-img img {
@@ -81,7 +90,6 @@
 .step-text-wrapper.active {
   transform: translateY(0%);
   opacity: 1;
-  transition: 0.8s all;
 }
 
 .step-title {

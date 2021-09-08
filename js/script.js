@@ -149,6 +149,35 @@ $(document).ready(function () {
 
   /* dex items animations */
 
+  /* dex steps animations */
+  const dexStepssAnimation = (num) => {
+    $('.step-image-general')
+      .eq(num)
+      .addClass('animate__animated animate__fadeInUp active');
+    $('.step-sub-img')
+      .eq(num)
+      .addClass('animate__animated animate__fadeInUp active');
+    $('.step-sub-img').eq(num).css('animation-delay', '.1s');
+    $('.step-text-wrapper')
+      .eq(num)
+      .addClass('animate__animated animate__fadeInUp active');
+    $('.step-text-wrapper').eq(num).css('animation-delay', '.1s');
+  };
+
+  const dexStepssAnimationRemove = (num) => {
+    $(`.step-image-general`)
+      .eq(num)
+      .removeClass('animate__animated animate__fadeInUp active');
+
+    $(`.step-sub-img`)
+      .eq(num)
+      .removeClass('animate__animated animate__fadeInUp active');
+    $(`.step-text-wrapper`)
+      .eq(num)
+      .removeClass('animate__animated animate__fadeInUp active');
+  };
+  /* dex steps animations */
+
   const page = new fullpage('.fullpage-wrapper', {
     licenseKey: 'YOUR_KEY_HERE',
     scrollOverflow: true,
@@ -194,6 +223,30 @@ $(document).ready(function () {
       } else {
         removeTitleActiveClass('.dexilion-features-title');
         sectionCounterRemoveActive('.dexilion-features-title');
+      }
+      if (nextIndex.index === 3) {
+        addTitleActiveClass('.dexilion-how-title');
+        sectionCounterAddActive('.dexilion-how-title');
+        dexStepssAnimation(0);
+      } else {
+        removeTitleActiveClass('.dexilion-how-title');
+        sectionCounterRemoveActive('.dexilion-how-title');
+        dexStepssAnimationRemove(0);
+      }
+      if (nextIndex.index === 4) {
+        dexStepssAnimation(1);
+      } else {
+        dexStepssAnimationRemove(1);
+      }
+      if (nextIndex.index === 5) {
+        dexStepssAnimation(2);
+      } else {
+        dexStepssAnimationRemove(2);
+      }
+      if (nextIndex.index === 6) {
+        dexStepssAnimation(3);
+      } else {
+        dexStepssAnimationRemove(3);
       }
     },
   });
