@@ -116,46 +116,35 @@ $(document).ready(function () {
   };
 
   const dexItemsAnimationOnScroll = () => {
-    document.querySelector('.section.active .dexilion-features').addEventListener('mousewheel', (e) => {
-      let delta = 0;
-      if (e.deltaY > delta) {
-        $('.features-item')
-          .eq(3)
-          .addClass('animate__animated animate__fadeInUp active');
-        $('.features-item').eq(3).css('animation-delay', '.5s');
-        $('.features-item').eq(3).css('animation-duration', '.8s');
-        $('.features-item')
-          .eq(4)
-          .addClass('animate__animated animate__fadeInUp active');
-        $('.features-item').eq(4).css('animation-delay', '.6s');
-        $('.features-item').eq(4).css('animation-duration', '.8s');
-        $('.features-item')
-          .eq(5)
-          .addClass('animate__animated animate__fadeInUp active');
-        $('.features-item').eq(5).css('animation-delay', '.7s');
-        $('.features-item').eq(5).css('animation-duration', '.8s');
-      }
-    });
+    document
+      .querySelector('.section.active .dexilion-features')
+      .addEventListener('mousewheel', (e) => {
+        let delta = 0;
+        if (e.deltaY > delta) {
+          $('.features-item')
+            .eq(3)
+            .addClass('animate__animated animate__fadeInUp active');
+          $('.features-item').eq(3).css('animation-delay', '.5s');
+          $('.features-item').eq(3).css('animation-duration', '.8s');
+          $('.features-item')
+            .eq(4)
+            .addClass('animate__animated animate__fadeInUp active');
+          $('.features-item').eq(4).css('animation-delay', '.6s');
+          $('.features-item').eq(4).css('animation-duration', '.8s');
+          $('.features-item')
+            .eq(5)
+            .addClass('animate__animated animate__fadeInUp active');
+          $('.features-item').eq(5).css('animation-delay', '.7s');
+          $('.features-item').eq(5).css('animation-duration', '.8s');
+        }
+      });
   };
   const dexItemsAnimationRemove = () => {
-    $('.features-item')
-      .eq(0)
-      .removeClass('animate__animated animate__fadeInUp active');
-    $('.features-item')
-      .eq(1)
-      .removeClass('animate__animated animate__fadeInUp active');
-    $('.features-item')
-      .eq(2)
-      .removeClass('animate__animated animate__fadeInUp active');
-    $('.features-item')
-      .eq(3)
-      .removeClass('animate__animated animate__fadeInUp active');
-    $('.features-item')
-      .eq(4)
-      .removeClass('animate__animated animate__fadeInUp active');
-    $('.features-item')
-      .eq(5)
-      .removeClass('animate__animated animate__fadeInUp active');
+    $('.features-item').each(() =>
+      $('.features-item').removeClass(
+        'animate__animated animate__fadeInUp active'
+      )
+    );
   };
 
   /* dex items animations */
@@ -198,10 +187,13 @@ $(document).ready(function () {
         sectionCounterAddActive('.dexilion-features-title');
         dexItemsAnimation();
         dexItemsAnimationOnScroll();
-      } else {
+      } else if (nextIndex.index < 2) {
         removeTitleActiveClass('.dexilion-features-title');
         sectionCounterRemoveActive('.dexilion-features-title');
         dexItemsAnimationRemove();
+      } else {
+        removeTitleActiveClass('.dexilion-features-title');
+        sectionCounterRemoveActive('.dexilion-features-title');
       }
     },
   });
