@@ -1,27 +1,3 @@
-/* .section.active .show {
-  animation: show 0.7s ease-out;
-} */
-
-/* .section.active .title-show {
-  animation: show 1s ease-in-out;
-}
-
-.section.active .first .hide-block {
-  animation: size-animation 2s linear;
-}
-
-.section.active .second .hide-block {
-  animation: size-animation 2.5s linear;
-}
-
-.section.active .about.up-block.block-first {
-  animation: up 1.2s linear;
-}
-
-.section.active .about.up-block.block-second {
-  animation: up 1.5s linear;
-} */
-
 .dexilion-counter {
   width: 20px;
   height: 20px;
@@ -58,6 +34,8 @@
   height: 0;
 }
 
+
+/* keyFrames */
 @keyframes size-animation {
   from {
     height: 100%;
@@ -71,16 +49,6 @@
     height: 0;
   }
 }
-
-/* @keyframes show {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-} */
 
 @keyframes scale {
   from {
@@ -99,18 +67,6 @@
   }
 }
 
-/* @keyframes up {
-  from {
-    opacity: 0;
-    transform: translateY(70%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-
 @keyframes down {
   from {
     opacity: 0;
@@ -123,14 +79,3 @@
   }
 }
 
-/* @keyframes rain {
-  from {
-    opacity: 0;
-    transform: translate(40%, -40%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-} */
