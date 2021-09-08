@@ -89,8 +89,7 @@
 .footer-information-item.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0%);
-  transition: 0.6s all;
+  transition: .8s all;
 }
 
 .footer-information-item-title {

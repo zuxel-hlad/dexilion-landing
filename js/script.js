@@ -226,6 +226,31 @@ $(document).ready(function () {
   };
   /* dex progress-items animations */
 
+  /* dex footer animation */
+  const dexFooterAnimate = () => {
+    $('.footer-promo').addClass('animate__animated animate__fadeInUp active');
+    $('.footer-information-item').each((index, item) => {
+      $('.footer-information-item')
+        .eq(index)
+        .addClass('animate__animated animate__fadeInUp active');
+      $('.footer-information-item').eq(0).css('animation-delay', '.1s');
+      $('.footer-information-item').eq(1).css('animation-delay', '.3s');
+      $('.footer-information-item').eq(2).css('animation-delay', '.5s');
+      $('.footer-information-item').eq(3).css('animation-delay', '.7s');
+    });
+  };
+  const dexFooterAnimateRemove = () => {
+    $('.footer-promo').removeClass(
+      'animate__animated animate__fadeInUp active'
+    );
+    $('.footer-information-item').each(() => {
+      $('.footer-information-item').removeClass(
+        'animate__animated animate__fadeInUp active'
+      );
+    });
+  };
+  /* dex footer animation */
+
   const page = new fullpage('.fullpage-wrapper', {
     licenseKey: 'YOUR_KEY_HERE',
     scrollOverflow: true,
@@ -304,6 +329,11 @@ $(document).ready(function () {
         removeTitleActiveClass('.dexilion-roadmap-title');
         sectionCounterRemoveActive('.dexilion-roadmap-title');
         progressItemanimationRemove();
+      }
+      if (nextIndex.index === 8) {
+        dexFooterAnimate();
+      } else {
+        dexFooterAnimateRemove();
       }
     },
   });
