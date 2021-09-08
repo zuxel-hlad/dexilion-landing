@@ -10,6 +10,10 @@
 .dexilion-features-title {
   position: relative;
   display: inline-block;
+  left: -100%;
+}
+.dexilion-features-title.active {
+  left: 0%;
 }
 
 .features-items-wrapper {
@@ -29,9 +33,7 @@
 }
 
 .features-item.active {
-  transform: translateY(0%);
   opacity: 1;
-  transition: 0.5s all;
 }
 
 .features-item:first-child {

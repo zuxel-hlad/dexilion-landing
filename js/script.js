@@ -1,71 +1,164 @@
 $(document).ready(function () {
-  jQuery.fn.extend({
-    onAppearanceAddClass: function (class_to_add) {
-      const $window = $(window),
-        window_height = $window.height(),
-        array_of_$elements = [];
-      this.each(function (i, el) {
-        array_of_$elements.push($(el));
-      });
-      scrollHandler();
-      if (array_of_$elements.length) {
-        $window
-          .on('resize', resizeHandler)
-          .on('resize', scrollHandler)
-          .on('scroll', scrollHandler);
-      }
+  // jQuery.fn.extend({
+  //   onAppearanceAddClass: function (class_to_add) {
+  //     const $window = $(window),
+  //       window_height = $window.height(),
+  //       array_of_$elements = [];
+  //     this.each(function (i, el) {
+  //       array_of_$elements.push($(el));
+  //     });
+  //     scrollHandler();
+  //     if (array_of_$elements.length) {
+  //       $window
+  //         .on('resize', resizeHandler)
+  //         .on('resize', scrollHandler)
+  //         .on('scroll', scrollHandler);
+  //     }
 
-      function resizeHandler() {
-        window_height = $window.height();
-      }
+  //     function resizeHandler() {
+  //       window_height = $window.height();
+  //     }
 
-      function watchProcessedElements(array_of_indexes) {
-        let l, i;
-        for (l = array_of_indexes.length, i = l - 1; i > -1; --i) {
-          array_of_$elements.splice(array_of_indexes[i], 1);
-        }
-        if (!array_of_$elements.length) {
-          $window
-            .off('resize', resizeHandler)
-            .off('scroll', scrollHandler)
-            .off('resize', scrollHandler);
-        }
-      }
+  //     function watchProcessedElements(array_of_indexes) {
+  //       let l, i;
+  //       for (l = array_of_indexes.length, i = l - 1; i > -1; --i) {
+  //         array_of_$elements.splice(array_of_indexes[i], 1);
+  //       }
+  //       if (!array_of_$elements.length) {
+  //         $window
+  //           .off('resize', resizeHandler)
+  //           .off('scroll', scrollHandler)
+  //           .off('resize', scrollHandler);
+  //       }
+  //     }
 
-      function scrollHandler() {
-        let i,
-          l,
-          processed = [];
-        for (l = array_of_$elements.length, i = 0; i < l; ++i) {
-          if (
-            $window.scrollTop() + window_height >
-            array_of_$elements[i].offset().top
-          ) {
-            array_of_$elements[i].addClass(class_to_add);
-            processed.push(i);
-          }
-        }
-        if (processed.length) {
-          watchProcessedElements(processed);
-        }
-      }
+  //     function scrollHandler() {
+  //       let i,
+  //         l,
+  //         processed = [];
+  //       for (l = array_of_$elements.length, i = 0; i < l; ++i) {
+  //         if (
+  //           $window.scrollTop() + window_height >
+  //           array_of_$elements[i].offset().top
+  //         ) {
+  //           array_of_$elements[i].addClass(class_to_add);
+  //           processed.push(i);
+  //         }
+  //       }
+  //       if (processed.length) {
+  //         watchProcessedElements(processed);
+  //       }
+  //     }
 
-      return this;
-    },
-  });
+  //     return this;
+  //   },
+  // });
 
   const $isAnimatedFirstTextBlock = $('.first .hero-text'),
     $heroRoundBlock = $('.first .hero-img-round.is-animated'),
     $heroStarsBlock = $('.first .hero-img-stars.is-animated'),
-    $aboutDexTitle = $('.second .about-dexilion-title.is-animated'),
     $aboutDexCard = $('.second .about-card.is-animated');
-  $aboutDexCounter = $('.second .dexilion-counter .hide-block');
-  // $isAnimatedSecond = $('.second .is-animated'),
-  // $isAnimatedThird = $('.third .is-animated'),
-  // $isAnimatedFourth = $('.fourth .is-animated'),
-  // $isAnimatedFifth = $('.fifth .is-animated'),
-  // $isAnimatedSixth = $('.sixth .is-animated'),
-  // $isAnimatedSeventh = $('.seventh .is-animated');
+
+  /* title counter functions */
+  const sectionCounterAddActive = (sectionName) => {
+    $(`${sectionName} .dexilion-counter .hide-block`).addClass('active');
+  };
+  const sectionCounterRemoveActive = (sectionName) => {
+    $(`${sectionName} .dexilion-counter .hide-block`).removeClass('active');
+  };
+
+  /* title counter functions */
+
+  /* add title active class functions */
+
+  const addTitleActiveClass = (titleSelector) => {
+    $(titleSelector).addClass('animate__animated animate__fadeInLeft active');
+    $(titleSelector).eq(0).css('animation-delay', '0s');
+    $(titleSelector).eq(0).css('animation-duration', '.5s');
+  };
+  const removeTitleActiveClass = (titleSelector) => {
+    $(titleSelector).removeClass(
+      'animate__animated animate__fadeInLeft active'
+    );
+  };
+  /* add title active class functions */
+
+  /* dex card animation */
+  const dexCardAnimation = () => {
+    $aboutDexCard.addClass('animate__animated animate__fadeInUp');
+    $aboutDexCard.eq(0).css('animation-delay', '.1s');
+    $aboutDexCard.eq(0).css('animation-duration', '1s');
+    $aboutDexCard.eq(1).css('animation-delay', '.3s');
+    $aboutDexCard.eq(1).css('animation-duration', '1s');
+  };
+  const dexCardRemoveAnimation = () => {
+    $aboutDexCard.removeClass('animate__animated animate__fadeInUp');
+  };
+  /* dex card animation */
+
+  /* dex items animations */
+  const dexItemsAnimation = () => {
+    $('.features-item')
+      .eq(0)
+      .addClass('animate__animated animate__fadeInUp active');
+    $('.features-item').eq(0).css('animation-delay', '.5s');
+    $('.features-item').eq(0).css('animation-duration', '.8s');
+    $('.features-item')
+      .eq(1)
+      .addClass('animate__animated animate__fadeInUp active');
+    $('.features-item').eq(1).css('animation-delay', '.6s');
+    $('.features-item').eq(1).css('animation-duration', '.8s');
+    $('.features-item')
+      .eq(2)
+      .addClass('animate__animated animate__fadeInUp active');
+    $('.features-item').eq(2).css('animation-delay', '.7s');
+    $('.features-item').eq(2).css('animation-duration', '.8s');
+  };
+
+  const dexItemsAnimationOnScroll = () => {
+    document.querySelector('.section.active .dexilion-features').addEventListener('mousewheel', (e) => {
+      let delta = 0;
+      if (e.deltaY > delta) {
+        $('.features-item')
+          .eq(3)
+          .addClass('animate__animated animate__fadeInUp active');
+        $('.features-item').eq(3).css('animation-delay', '.5s');
+        $('.features-item').eq(3).css('animation-duration', '.8s');
+        $('.features-item')
+          .eq(4)
+          .addClass('animate__animated animate__fadeInUp active');
+        $('.features-item').eq(4).css('animation-delay', '.6s');
+        $('.features-item').eq(4).css('animation-duration', '.8s');
+        $('.features-item')
+          .eq(5)
+          .addClass('animate__animated animate__fadeInUp active');
+        $('.features-item').eq(5).css('animation-delay', '.7s');
+        $('.features-item').eq(5).css('animation-duration', '.8s');
+      }
+    });
+  };
+  const dexItemsAnimationRemove = () => {
+    $('.features-item')
+      .eq(0)
+      .removeClass('animate__animated animate__fadeInUp active');
+    $('.features-item')
+      .eq(1)
+      .removeClass('animate__animated animate__fadeInUp active');
+    $('.features-item')
+      .eq(2)
+      .removeClass('animate__animated animate__fadeInUp active');
+    $('.features-item')
+      .eq(3)
+      .removeClass('animate__animated animate__fadeInUp active');
+    $('.features-item')
+      .eq(4)
+      .removeClass('animate__animated animate__fadeInUp active');
+    $('.features-item')
+      .eq(5)
+      .removeClass('animate__animated animate__fadeInUp active');
+  };
+
+  /* dex items animations */
 
   const page = new fullpage('.fullpage-wrapper', {
     licenseKey: 'YOUR_KEY_HERE',
@@ -73,7 +166,6 @@ $(document).ready(function () {
     scrollingSpeed: 1000,
     normalScrollElements: '#dexilion-features',
     afterLoad: function (index, nextIndex, direction) {
-      console.log(nextIndex.index);
       // zero animation
       if (nextIndex.index === 0) {
         $isAnimatedFirstTextBlock.addClass(
@@ -91,37 +183,25 @@ $(document).ready(function () {
         );
       }
       // first animation
-      if (nextIndex.index == 1) {
-        $aboutDexTitle.addClass('animate__animated animate__fadeInLeft active');
-        $aboutDexTitle.eq(0).css('animation-delay', '0s');
-        $aboutDexTitle.eq(0).css('animation-duration', '.3s');
-        $aboutDexCard.addClass('animate__animated animate__fadeInUp');
-        $aboutDexCard.eq(0).css('animation-delay', '.1s');
-        $aboutDexCard.eq(0).css('animation-duration', '1s');
-        $aboutDexCard.eq(1).css('animation-delay', '.3s');
-        $aboutDexCard.eq(1).css('animation-duration', '1s');
-        $aboutDexCounter.addClass('animate__animated active');
-        $aboutDexCounter.eq(0).css('animation-delay', '1s');
-        $aboutDexCounter.eq(1).css('animation-delay', '2.5s');
+      if (nextIndex.index === 1) {
+        addTitleActiveClass('.about-dexilion-title');
+        sectionCounterAddActive('.about-dexilion');
+        dexCardAnimation();
       } else {
-        $aboutDexTitle.removeClass(
-          'animate__animated animate__fadeInLeft active'
-        );
-        $aboutDexCard.removeClass('animate__animated animate__fadeInUp');
+        removeTitleActiveClass('.about-dexilion-title');
+        sectionCounterRemoveActive('.about-dexilion');
+        dexCardRemoveAnimation();
       }
       // second animation
-      if ((index == 1 || index == 2) && nextIndex == 3) {
-        $isAnimatedThird
-          .eq(0)
-          .addClass('animated fadeInRightBig')
-          .css('animation-delay', '.3s');
-        $isAnimatedThird
-          .eq(1)
-          .addClass('animated fadeInLeftBig')
-          .css('animation-delay', '.6s');
-        $isAnimatedThirdSingle
-          .addClass('animated bounceInDown')
-          .css('animation-delay', '1.2s');
+      if (nextIndex.index === 2) {
+        addTitleActiveClass('.dexilion-features-title');
+        sectionCounterAddActive('.dexilion-features-title');
+        dexItemsAnimation();
+        dexItemsAnimationOnScroll();
+      } else {
+        removeTitleActiveClass('.dexilion-features-title');
+        sectionCounterRemoveActive('.dexilion-features-title');
+        dexItemsAnimationRemove();
       }
     },
   });

@@ -22,7 +22,6 @@
   animation: up 1.5s linear;
 } */
 
-
 .dexilion-counter {
   width: 20px;
   height: 20px;
@@ -33,7 +32,6 @@
   align-items: center;
   position: absolute;
 }
-
 
 .hide-block {
   position: absolute;
@@ -50,8 +48,13 @@
   color: var(--btn-color);
 }
 
-.hide-block.active {
-  animation:  size-animation 1s linear;
+.first-number .hide-block.active {
+  animation: size-animation 1.5s linear;
+  height: 0;
+}
+
+.second-number .hide-block.active {
+  animation: size-animation 2.1s linear;
   height: 0;
 }
 
