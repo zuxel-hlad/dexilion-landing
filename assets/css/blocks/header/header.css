@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  animation: down .8s ease-out;
+  animation: down 0.8s ease-out;
   z-index: 1;
   width: 100%;
   background-color: var(--bg-main-color);
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--main-border-color);
-  transition: .8s all;
+  transition: 0.8s all;
 }
 
 .header-wrapper {
@@ -81,6 +81,10 @@
 
 .nav-list-link:hover:after {
   background-color: var(--btn-color);
+}
+
+.mobile {
+  display: none;
 }
 
 .demo-btn {

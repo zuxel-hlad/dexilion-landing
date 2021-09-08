@@ -9,6 +9,8 @@
 @import './blocks/dexilion-roadmap/dexilion-roadmap.css';
 @import './blocks/footer/footer.css';
 @import './base/animations.css';
+@import './blocks/burger/burger.css';
+@import './responsive.css';
 
 .fullpage-wrapper {
   background-color: var(--bg-main-color);
@@ -32,29 +34,3 @@
   padding: 0 20px;
   margin: 0 auto;
 }
-
-/* .is-animated {
-  opacity: 0;
-}
-
-.is-animated.animate__animated {
-  opacity: 1;
-}
-
-.showOpacity {
-  opacity: 0;
-}
-
-.animate__animated.showOpacity {
-  animation: showOpacity;
-}
-
-@keyframes showOpacity {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
