@@ -178,6 +178,54 @@ $(document).ready(function () {
   };
   /* dex steps animations */
 
+  /* dex progress-items animations */
+  const progressItemanimation = () => {
+    $('.progress-item')
+      .eq(0)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item')
+      .eq(5)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(5).css('animation-delay', '.1s');
+    $('.progress-item')
+      .eq(1)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(1).css('animation-delay', '.2s');
+    $('.progress-item')
+      .eq(6)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(6).css('animation-delay', '.3s');
+    $('.progress-item')
+      .eq(2)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(2).css('animation-delay', '.4s');
+    $('.progress-item')
+      .eq(7)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(7).css('animation-delay', '.5s');
+    $('.progress-item')
+      .eq(3)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(3).css('animation-delay', '.6s');
+    $('.progress-item')
+      .eq(8)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(8).css('animation-delay', '.7s');
+    $('.progress-item')
+      .eq(4)
+      .addClass('animate__animated animate__fadeIn active');
+    $('.progress-item').eq(4).css('animation-delay', '.8s');
+  };
+
+  const progressItemanimationRemove = () => {
+    $('.progress-item').each(() =>
+      $('.progress-item').removeClass(
+        'animate__animated animate__fadeIn active'
+      )
+    );
+  };
+  /* dex progress-items animations */
+
   const page = new fullpage('.fullpage-wrapper', {
     licenseKey: 'YOUR_KEY_HERE',
     scrollOverflow: true,
@@ -247,6 +295,15 @@ $(document).ready(function () {
         dexStepssAnimation(3);
       } else {
         dexStepssAnimationRemove(3);
+      }
+      if (nextIndex.index === 7) {
+        addTitleActiveClass('.dexilion-roadmap-title');
+        sectionCounterAddActive('.dexilion-roadmap-title');
+        progressItemanimation();
+      } else {
+        removeTitleActiveClass('.dexilion-roadmap-title');
+        sectionCounterRemoveActive('.dexilion-roadmap-title');
+        progressItemanimationRemove();
       }
     },
   });

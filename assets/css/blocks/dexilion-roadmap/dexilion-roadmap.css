@@ -10,6 +10,11 @@
 .dexilion-roadmap-title {
   position: relative;
   display: inline-block;
+  left: -100%;
+}
+
+.dexilion-roadmap-title.active {
+  left: 0;
 }
 
 .dexilion-roadmap-title .dexilion-counter {

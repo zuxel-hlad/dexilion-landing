@@ -47,7 +47,7 @@
 .step-image-general {
   position: relative;
   cursor: pointer;
-  transform: translateY(120%);
+  transform: translateY(100%);
   opacity: 0;
   transition: 0.5s all;
 }
@@ -65,7 +65,7 @@
 .step-sub-img {
   position: absolute;
   cursor: pointer;
-  transform: translateY(120%);
+  transform: translateY(100%);
   opacity: 0;
   transition: 0.5s all;
 }
@@ -82,7 +82,7 @@
 .step-text-wrapper {
   width: 50%;
   padding: 55px 0 0 160px;
-  transform: translateY(120%);
+  transform: translateY(100%);
   opacity: 0;
   transition: 0.5s all;
 }
