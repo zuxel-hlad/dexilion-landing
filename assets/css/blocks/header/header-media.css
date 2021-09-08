@@ -97,6 +97,11 @@
     margin: 33px 0 0 0;
   }
 
+  .demo {
+    width: 100%;
+    outline: none;
+  }
+
   .burger-menu {
     display: flex;
   }
