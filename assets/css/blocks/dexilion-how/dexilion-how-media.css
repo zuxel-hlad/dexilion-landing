@@ -20,6 +20,10 @@
   .reversed .step-image-wrapper {
     padding: 0 165px 0 0;
   }
+
+  .dexilion-step-item.track-position.reversed .step-image-wrapper {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -99,6 +103,10 @@
   }
   .step-descr {
     margin: 0;
+  }
+
+  .dexilion-step-item.track-position {
+    padding: 50px 0 0 0;
   }
 }
 
@@ -180,6 +188,16 @@
 
   .dexilion-step-item.sell-derivatives .step-image-wrapper {
     padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .dexilion-step-item.track-position {
+    padding: 24px 0 0 0;
+  }
+
+  .step-image-general.track-position {
+    max-width: 343px;
   }
 }
 
