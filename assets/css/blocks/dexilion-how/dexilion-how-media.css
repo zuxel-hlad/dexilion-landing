@@ -102,6 +102,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .dexilion-step-item.sell-derivatives {
+    padding: 50px 0 0 0;
+  }
+
+  .dexilion-step-item.sell-derivatives .step-descr {
+    margin: 40px 0 0 0;
+  }
+}
 @media (max-width: 576px) {
   .step-counter {
     font-size: 14px;
@@ -149,6 +158,28 @@
     max-width: 175px;
     right: -128px;
     top: 21px;
+  }
+
+  .step-image-general.sell-derivatives {
+    max-width: 321px;
+  }
+
+  .dexilion-step-item.sell-derivatives {
+    padding: 24px 0 0 0;
+  }
+
+  .step-sub-img.sell-derivatives {
+    max-width: 119px;
+    top: 21px;
+    right: -22px;
+  }
+
+  .dexilion-step-item.sell-derivatives .step-descr {
+    margin: 0;
+  }
+
+  .dexilion-step-item.sell-derivatives .step-image-wrapper {
+    padding: 0;
   }
 }
 
