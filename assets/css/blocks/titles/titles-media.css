@@ -1,12 +1,31 @@
+@media (max-width: 1230px) {
+  .subtitle {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 @media (max-width: 1100px) {
   .main-title {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .title {
+    font-size: 32px;
   }
 }
 
 @media (max-width: 576px) {
   .main-title {
     font-size: 32px;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .subtitle {
+    font-size: 20px;
   }
 }

@@ -252,10 +252,11 @@ $(document).ready(function () {
   /* dex footer animation */
 
   const page = new fullpage('.fullpage-wrapper', {
-    licenseKey: 'YOUR_KEY_HERE',
+    licenseKey: null,
     scrollOverflow: true,
     scrollingSpeed: 1000,
-    normalScrollElements: '#dexilion-features',
+    // normalScrollElements: '#dexilion-features',
+    fitToSection: true,
     afterLoad: function (index, nextIndex, direction) {
       // zero animation
       if (nextIndex.index === 0) {
