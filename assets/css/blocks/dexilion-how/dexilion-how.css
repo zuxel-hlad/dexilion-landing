@@ -192,3 +192,7 @@
 .step-image-general.track-position {
   max-width: 630px;
 }
+
+.dexilion-mobile-titles {
+  display: none;
+}

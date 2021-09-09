@@ -1,0 +1,92 @@
+@media (max-width: 1750px) {
+  .dexilion-how {
+    padding: 112px 0 0 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .step-text-wrapper {
+    padding: 55px 0 0 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .step-descr {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .step-text-wrapper .step-counter {
+    display: none;
+  }
+
+  .step-text-wrapper .step-title {
+    display: none;
+  }
+
+  .dexilion-mobile-titles {
+    margin: 40px 0 0 0;
+    display: block;
+  }
+
+  .dexilion-steps-wrapper {
+    margin: 24px 0 0 0;
+  }
+
+  .dexilion-step-item {
+    flex-wrap: wrap;
+  }
+
+  .step-text-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 43px 0 0 0;
+  }
+  .step-image-wrapper {
+    width: 100%;
+    padding: 0 35px 0 0;
+  }
+  .step-descr {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .step-counter {
+    font-size: 14px;
+  }
+
+  .step-title {
+    margin: 12px 0 0 0;
+  }
+
+  .step-image-general.connect-wallet {
+    max-width: 321px;
+  }
+
+  .step-sub-img.connect-wallet {
+    max-width: 240px;
+    top: 103px;
+    right: -21px;
+  }
+
+  .step-descr {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .step-icons {
+    margin: 16px 0 0 0;
+  }
+  .step-icon {
+    width: 37px;
+  }
+}
+
+@media (max-width: 350px) {
+  .step-text-wrapper {
+    margin: 65px 0 0 0;
+  }
+}
