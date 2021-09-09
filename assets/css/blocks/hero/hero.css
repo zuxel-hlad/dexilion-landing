@@ -1,6 +1,6 @@
 .dexilion-hero {
   background-color: var(--bg-main-color);
-  min-height: 700px;
+  min-height: 667px;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -26,7 +26,6 @@
   max-width: 609px;
   position: relative;
 }
-
 
 .hero-title {
   margin: 32px 0 0 0;
