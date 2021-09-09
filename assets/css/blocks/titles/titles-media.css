@@ -3,3 +3,9 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 32px;
+  }
+}
