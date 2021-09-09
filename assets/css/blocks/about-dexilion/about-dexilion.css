@@ -31,8 +31,9 @@
   border-radius: 8px;
   cursor: pointer;
   transition: 0.5s all;
-  transform: translateY(150%);
+  transform: translateY(1000%);
 }
+
 
 .about-card-logo {
   width: 88px;

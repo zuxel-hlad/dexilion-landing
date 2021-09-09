@@ -77,7 +77,7 @@
 
 @media (max-width: 900px) {
   .about-dexilion {
-    min-height: 100vh;
+    height: auto;
   }
 
   .about-card-wrapper {

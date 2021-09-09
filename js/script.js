@@ -255,7 +255,6 @@ $(document).ready(function () {
     licenseKey: null,
     scrollOverflow: true,
     scrollingSpeed: 1000,
-    // normalScrollElements: '#dexilion-features',
     fitToSection: true,
     afterLoad: function (index, nextIndex, direction) {
       // zero animation
