@@ -1,0 +1,28 @@
+@media (max-width: 1750px) {
+  .dexilion-roadmap {
+    padding: 112px 0 0 0;
+  }
+}
+
+@media (max-width: 1156px) {
+  .roadmap-progress-wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 800px) {
+  .roadmap-progress-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .progress-item {
+    padding: 32px;
+  }
+
+  .progress-item-descr {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
