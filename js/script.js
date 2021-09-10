@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // jQuery.fn.extend({
   //   onAppearanceAddClass: function (class_to_add) {
-  //     const $window = $(window),
+  //     let $window = $(window),
   //       window_height = $window.height(),
   //       array_of_$elements = [];
   //     this.each(function (i, el) {
@@ -139,6 +139,7 @@ $(document).ready(function () {
         }
       });
   };
+
   const dexItemsAnimationRemove = () => {
     $('.features-item').each(() =>
       $('.features-item').removeClass(
@@ -249,94 +250,133 @@ $(document).ready(function () {
       );
     });
   };
-  /* dex footer animation */
 
-  const page = new fullpage('.fullpage-wrapper', {
-    licenseKey: null,
-    scrollOverflow: true,
-    scrollingSpeed: 1000,
-    afterLoad: function (index, nextIndex, direction) {
-      // zero animation
-      if (nextIndex.index === 0) {
-        $isAnimatedFirstTextBlock.addClass(
-          'animate__animated animate__fadeInLeft'
-        );
-        $isAnimatedFirstTextBlock.eq(0).css('animation-delay', '2s');
-        $isAnimatedFirstTextBlock.eq(0).css('animation-duration', '.5s');
-        $heroRoundBlock.addClass('animate__animated animate__fadeInLeft');
-        $heroRoundBlock.eq(0).css('animation-delay', '1s');
-        $heroStarsBlock.addClass('animate__animated animate__fadeInTopRight');
-        $heroStarsBlock.eq(0).css('animation-delay', '2s');
-      } else {
-        $isAnimatedFirstTextBlock.removeClass(
-          'animate__animated animate__fadeInLeft'
-        );
-      }
-      // first animation
-      if (nextIndex.index === 1) {
-        addTitleActiveClass('.about-dexilion-title');
-        sectionCounterAddActive('.about-dexilion');
-        dexCardAnimation();
-      } else {
-        removeTitleActiveClass('.about-dexilion-title');
-        sectionCounterRemoveActive('.about-dexilion');
-        dexCardRemoveAnimation();
-      }
-      // second animation
-      if (nextIndex.index === 2) {
-        addTitleActiveClass('.dexilion-features-title');
-        sectionCounterAddActive('.dexilion-features-title');
-        dexItemsAnimation();
-        dexItemsAnimationOnScroll();
-      } else if (nextIndex.index < 2) {
-        removeTitleActiveClass('.dexilion-features-title');
-        sectionCounterRemoveActive('.dexilion-features-title');
-        dexItemsAnimationRemove();
-      } else {
-        removeTitleActiveClass('.dexilion-features-title');
-        sectionCounterRemoveActive('.dexilion-features-title');
-      }
-      if (nextIndex.index === 3) {
-        addTitleActiveClass('.dexilion-how-title');
-        sectionCounterAddActive('.dexilion-how-title');
-        dexStepssAnimation(0);
-      } else {
-        removeTitleActiveClass('.dexilion-how-title');
-        sectionCounterRemoveActive('.dexilion-how-title');
-        dexStepssAnimationRemove(0);
-      }
-      if (nextIndex.index === 4) {
-        dexStepssAnimation(1);
-      } else {
-        dexStepssAnimationRemove(1);
-      }
-      if (nextIndex.index === 5) {
-        dexStepssAnimation(2);
-      } else {
-        dexStepssAnimationRemove(2);
-      }
-      if (nextIndex.index === 6) {
-        dexStepssAnimation(3);
-      } else {
-        dexStepssAnimationRemove(3);
-      }
-      if (nextIndex.index === 7) {
-        addTitleActiveClass('.dexilion-roadmap-title');
-        sectionCounterAddActive('.dexilion-roadmap-title');
-        progressItemanimation();
-      } else {
-        removeTitleActiveClass('.dexilion-roadmap-title');
-        sectionCounterRemoveActive('.dexilion-roadmap-title');
-        progressItemanimationRemove();
-      }
-      if (nextIndex.index === 8) {
-        dexFooterAnimate();
-      } else {
-        dexFooterAnimateRemove();
-      }
-    },
-  });
+  // here
+
+  var block_show = false;
+
+  function initFullpage() {
+    $('.fullpage-wrapper').fullpage({
+      licenseKey: null,
+      scrollOverflow: true,
+      scrollingSpeed: 1000,
+      responsiveWidth: 768,
+      afterLoad: function (index, nextIndex, direction) {
+        // zero animation
+        if (nextIndex.index === 0) {
+          $isAnimatedFirstTextBlock.addClass(
+            'animate__animated animate__fadeInLeft'
+          );
+          $isAnimatedFirstTextBlock.eq(0).css('animation-delay', '2s');
+          $isAnimatedFirstTextBlock.eq(0).css('animation-duration', '.5s');
+          $heroRoundBlock.addClass('animate__animated animate__fadeInLeft');
+          $heroRoundBlock.eq(0).css('animation-delay', '1s');
+          $heroStarsBlock.addClass('animate__animated animate__fadeInTopRight');
+          $heroStarsBlock.eq(0).css('animation-delay', '2s');
+        } else {
+          $isAnimatedFirstTextBlock.removeClass(
+            'animate__animated animate__fadeInLeft'
+          );
+        }
+        // first animation
+        if (nextIndex.index === 1) {
+          addTitleActiveClass('.about-dexilion-title');
+          sectionCounterAddActive('.about-dexilion');
+          dexCardAnimation();
+        } else {
+          removeTitleActiveClass('.about-dexilion-title');
+          sectionCounterRemoveActive('.about-dexilion');
+          dexCardRemoveAnimation();
+        }
+        // second animation
+        if (nextIndex.index === 2) {
+          addTitleActiveClass('.dexilion-features-title');
+          sectionCounterAddActive('.dexilion-features-title');
+          dexItemsAnimation();
+          dexItemsAnimationOnScroll();
+        } else if (nextIndex.index < 2) {
+          removeTitleActiveClass('.dexilion-features-title');
+          sectionCounterRemoveActive('.dexilion-features-title');
+          dexItemsAnimationRemove();
+        } else {
+          removeTitleActiveClass('.dexilion-features-title');
+          sectionCounterRemoveActive('.dexilion-features-title');
+        }
+        if (nextIndex.index === 3) {
+          addTitleActiveClass('.dexilion-how-title');
+          sectionCounterAddActive('.dexilion-how-title');
+          dexStepssAnimation(0);
+        } else {
+          removeTitleActiveClass('.dexilion-how-title');
+          sectionCounterRemoveActive('.dexilion-how-title');
+          dexStepssAnimationRemove(0);
+        }
+        if (nextIndex.index === 4) {
+          dexStepssAnimation(1);
+        } else {
+          dexStepssAnimationRemove(1);
+        }
+        if (nextIndex.index === 5) {
+          dexStepssAnimation(2);
+        } else {
+          dexStepssAnimationRemove(2);
+        }
+        if (nextIndex.index === 6) {
+          dexStepssAnimation(3);
+        } else {
+          dexStepssAnimationRemove(3);
+        }
+        if (nextIndex.index === 7) {
+          addTitleActiveClass('.dexilion-roadmap-title');
+          sectionCounterAddActive('.dexilion-roadmap-title');
+          progressItemanimation();
+        } else {
+          removeTitleActiveClass('.dexilion-roadmap-title');
+          sectionCounterRemoveActive('.dexilion-roadmap-title');
+          progressItemanimationRemove();
+        }
+        if (nextIndex.index === 8) {
+          dexFooterAnimate();
+        } else {
+          dexFooterAnimateRemove();
+        }
+      },
+    });
+  }
+
+  initFullpage();
+
+  // function destroyFullpage() {
+  //   $.fn.fullpage.destroy();
+  // }
+
+  // if ($(window).width() > 768) {
+  //   initFullpage();
+  // }
+  
+  // if($(window).width() <= 768) {
+  //   destroyFullpage();
+  // }
+
+  // /* dex footer animation */
+
+  // if ($(window).width() < 768) {
+  //   // $('.dexilion-features').onAppearanceAddClass('active');
+  // }
+
+  // $(window).resize(function () {
+  //   // if ($(window).width() < 768) {
+  //   //   destroyFullpage();
+  //   // }
+
+  //   if ($(window).width() > 768) {
+  //     initFullpage();
+  //   }
+  // });
 });
+
+
+
 
 /* mobile burger */
 

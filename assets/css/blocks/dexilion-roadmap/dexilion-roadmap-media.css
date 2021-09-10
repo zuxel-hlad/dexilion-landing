@@ -16,6 +16,15 @@
   }
 }
 
+@media (max-width: 800px) {
+  .fp-scroller,
+  .fp-scrollable,
+  .fp-completely .fp-tableCell {
+    transform: none !important;
+    height: auto !important;
+  }
+}
+
 @media (max-width: 540px) {
   .dexilion-roadmap {
     padding: 0;
