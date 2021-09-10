@@ -294,7 +294,8 @@ $(document).ready(function () {
           sectionCounterAddActive('.dexilion-features-title');
           dexItemsAnimation();
           dexItemsAnimationOnScroll();
-        } else if (nextIndex.index < 2) {
+        } 
+        else if (nextIndex.index < 2) {
           removeTitleActiveClass('.dexilion-features-title');
           sectionCounterRemoveActive('.dexilion-features-title');
           dexItemsAnimationRemove();
