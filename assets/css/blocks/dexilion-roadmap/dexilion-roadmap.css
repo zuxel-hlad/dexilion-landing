@@ -28,6 +28,10 @@
   flex-wrap: wrap;
 }
 
+.roadmap-progress-wrapper.mobile {
+  display: none;
+}
+
 .progress-item {
   box-sizing: border-box;
   width: 100%;
@@ -42,6 +46,18 @@
   border: 1px solid transparent;
   opacity: 0;
   visibility: hidden;
+}
+.progress-item-mobile {
+  box-sizing: border-box;
+  max-width: 256px;
+  min-height: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+  cursor: pointer;
+  transition: 0.5s all;
+  border: 1px solid transparent;
 }
 
 .progress-item.active {

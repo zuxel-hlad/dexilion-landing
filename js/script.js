@@ -255,7 +255,6 @@ $(document).ready(function () {
     licenseKey: null,
     scrollOverflow: true,
     scrollingSpeed: 1000,
-    fitToSection: true,
     afterLoad: function (index, nextIndex, direction) {
       // zero animation
       if (nextIndex.index === 0) {
@@ -364,4 +363,15 @@ document.addEventListener('click', (e) => {
   if (!its_menu && !its_hamburger && menu_is_active) {
     mobileMenuToggler();
   }
+});
+
+// progress-item-mobile active
+
+const progress = document.querySelectorAll('.progress-item-mobile');
+
+$('.roadmap-progress-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  infinite: true
 });
