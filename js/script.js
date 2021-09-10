@@ -367,11 +367,21 @@ document.addEventListener('click', (e) => {
 
 // progress-item-mobile active
 
-const progress = document.querySelectorAll('.progress-item-mobile');
+const progressMobileItem = document.querySelectorAll('.progress-item-mobile'),
+  progressBarItem = document.querySelectorAll('.progress-bar-item');
+
+const progressBarItemActive = (index = 0) => {
+  progressBarItem[index].classList.remove('active');
+  progressBarItem[index].classList.add('active');
+};
 
 $('.roadmap-progress-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  infinite: true
+  infinite: true,
+  initialSlide: 0,
+  dots: true,
 });
+
+progressMobileItem.forEach((item, index) => {});
