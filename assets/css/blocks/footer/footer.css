@@ -89,7 +89,7 @@
 .footer-information-item.active {
   opacity: 1;
   visibility: visible;
-  transition: .8s all;
+  transition: 0.8s all;
 }
 
 .footer-information-item-title {
@@ -171,4 +171,8 @@
 
 .footer-list-item-link.social:hover svg path {
   fill: var(--btn-color);
+}
+
+.footer-copyright-mobile {
+  display: none;
 }
