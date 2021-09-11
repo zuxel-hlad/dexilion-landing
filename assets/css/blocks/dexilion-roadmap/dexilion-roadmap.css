@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .roadmap-progress-wrapper.mobile {
@@ -40,16 +41,34 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 40px;
+  padding: 39px;
   cursor: pointer;
   transition: 0.5s all;
   border: 1px solid transparent;
+  border-color: var(--main-border-color);
   opacity: 0;
   visibility: hidden;
 }
+
+.progress-item:nth-child(6) {
+  border-top-color: var(--main-border-color);
+margin: 0 0 0 auto;
+}
+.progress-item:nth-child(7) {
+  border-top-color: var(--main-border-color);
+
+}
+.progress-item:nth-child(8) {
+  border-top-color: var(--main-border-color);
+
+}
+.progress-item:nth-child(9) {
+  border-top-color: var(--main-border-color);
+margin: 0 auto 0 0;
+}
 .progress-item-mobile {
   box-sizing: border-box;
-  max-width: 256px!important;
+  max-width: 256px !important;
   min-height: 213px;
   display: flex;
   flex-direction: column;
