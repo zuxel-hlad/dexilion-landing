@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .dexilion-roadmap-title {
@@ -49,7 +49,7 @@
 }
 .progress-item-mobile {
   box-sizing: border-box;
-  width: 256px;
+  max-width: 256px!important;
   min-height: 213px;
   display: flex;
   flex-direction: column;

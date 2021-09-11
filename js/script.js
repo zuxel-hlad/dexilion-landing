@@ -251,10 +251,6 @@ $(document).ready(function () {
     });
   };
 
-  // here
-
-  var block_show = false;
-
   function initFullpage() {
     $('.fullpage-wrapper').fullpage({
       licenseKey: null,
@@ -273,11 +269,7 @@ $(document).ready(function () {
           $heroRoundBlock.eq(0).css('animation-delay', '1s');
           $heroStarsBlock.addClass('animate__animated animate__fadeInTopRight');
           $heroStarsBlock.eq(0).css('animation-delay', '2s');
-        } else {
-          $isAnimatedFirstTextBlock.removeClass(
-            'animate__animated animate__fadeInLeft'
-          );
-        }
+        } 
         // first animation
         if (nextIndex.index === 1) {
           addTitleActiveClass('.about-dexilion-title');
