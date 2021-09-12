@@ -269,7 +269,7 @@ $(document).ready(function () {
           $heroRoundBlock.eq(0).css('animation-delay', '1s');
           $heroStarsBlock.addClass('animate__animated animate__fadeInTopRight');
           $heroStarsBlock.eq(0).css('animation-delay', '2s');
-        } 
+        }
         // first animation
         if (nextIndex.index === 1) {
           addTitleActiveClass('.about-dexilion-title');
@@ -286,8 +286,7 @@ $(document).ready(function () {
           sectionCounterAddActive('.dexilion-features-title');
           dexItemsAnimation();
           dexItemsAnimationOnScroll();
-        } 
-        else if (nextIndex.index < 2) {
+        } else if (nextIndex.index < 2) {
           removeTitleActiveClass('.dexilion-features-title');
           sectionCounterRemoveActive('.dexilion-features-title');
           dexItemsAnimationRemove();
@@ -346,7 +345,7 @@ $(document).ready(function () {
   // if ($(window).width() > 768) {
   //   initFullpage();
   // }
-  
+
   // if($(window).width() <= 768) {
   //   destroyFullpage();
   // }
@@ -367,9 +366,6 @@ $(document).ready(function () {
   //   }
   // });
 });
-
-
-
 
 /* mobile burger */
 
