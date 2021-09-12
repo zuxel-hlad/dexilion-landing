@@ -111,7 +111,6 @@
 .progress-item:nth-child(8) .progress-item-line,
 .progress-item:nth-child(9) .progress-item-line {
   top: 0;
-  height: 1px;
 }
 
 .progress-item:nth-child(6)::after,
@@ -171,6 +170,7 @@
 
 .progress-item:hover .progress-item-line {
   width: 100%;
+  z-index: 1;
 }
 
 .progress-item:hover::before {
