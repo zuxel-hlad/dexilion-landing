@@ -142,19 +142,19 @@
 
 .progress-item:nth-child(6)::before {
   position: absolute;
-  top: -9px;
+  top: -7px;
 }
 .progress-item:nth-child(7)::before {
   position: absolute;
-  top: -9px;
+  top: -7px;
 }
 .progress-item:nth-child(8)::before {
   position: absolute;
-  top: -9px;
+  top: -7px;
 }
 .progress-item:nth-child(9)::before {
   position: absolute;
-  top: -9px;
+  top: -7px;
 }
 
 .progress-item:nth-child(6):hover {
