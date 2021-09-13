@@ -21,10 +21,6 @@
     top: unset;
   }
 
-  .progress-item:nth-child(6) {
-    border-radius: 4px;
-  }
-
   .progress-item:nth-child(6) .progress-item-line,
   .progress-item:nth-child(7) .progress-item-line,
   .progress-item:nth-child(8) .progress-item-line,
