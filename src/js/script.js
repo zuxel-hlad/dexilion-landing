@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   const $isAnimatedFirstTextBlock = $('.first .hero-text'),
     $heroRoundBlock = $('.first .hero-img-round.is-animated'),
     $heroStarsBlock = $('.first .hero-img-stars.is-animated'),
@@ -288,7 +287,8 @@ $(document).ready(function () {
 /* mobile burger */
 
 const burger = document.querySelector('.burger-menu'),
-  headerWrapper = document.querySelector('.header-nav-wrapper');
+  headerWrapper = document.querySelector('.header-nav-wrapper'),
+  headerLinks = document.querySelectorAll('.nav-list-link');
 
 const mobileMenuToggler = () => {
   burger.classList.toggle('active');
@@ -298,6 +298,14 @@ const mobileMenuToggler = () => {
 burger.addEventListener('click', (e) => {
   e.stopPropagation();
   mobileMenuToggler();
+});
+
+headerLinks.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    if (e.target === item) {
+      mobileMenuToggler();
+    }
+  });
 });
 
 /* if mobile menu open and click outside */
@@ -311,16 +319,6 @@ document.addEventListener('click', (e) => {
     mobileMenuToggler();
   }
 });
-
-// progress-item-mobile active
-
-const progressMobileItem = document.querySelectorAll('.progress-item-mobile'),
-  progressBarItem = document.querySelectorAll('.progress-bar-item');
-
-const progressBarItemActive = (index = 0) => {
-  progressBarItem[index].classList.remove('active');
-  progressBarItem[index].classList.add('active');
-};
 
 $('.roadmap-progress-slider').slick({
   slidesToShow: 1,
