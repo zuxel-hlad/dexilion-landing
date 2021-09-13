@@ -122,15 +122,34 @@
 @media (max-width: 768px) {
   .dexilion-hero {
     padding: 112px 0 0 0;
-    height: auto;
+    height: 700px;
+  }
+
+  .hero-text {
+    animation: none;
   }
 
   .hero-img {
     width: 100%;
+    height: 400px;
+    overflow: hidden;
   }
   .hero-img-round {
     top: 2px;
     left: 214px;
+    animation: none;
+  }
+
+  .hero-img-round svg {
+    animation: none;
+  }
+
+  .hero-img-round svg {
+    animation: none !important;
+  }
+
+  .hero-img-stars {
+    animation: none;
   }
 
   .hero-img-line.line-first {
@@ -146,6 +165,14 @@
   .hero-img-line.line-third {
     top: 110px;
     left: 330px;
+  }
+
+  .hero-img-line svg rect{
+
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
+      transition: none !important;
   }
 }
 

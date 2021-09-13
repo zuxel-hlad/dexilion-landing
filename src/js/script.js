@@ -256,7 +256,7 @@ $(document).ready(function () {
       licenseKey: null,
       scrollOverflow: true,
       scrollingSpeed: 1000,
-      responsiveWidth: 768,
+      responsiveWidth: 769,
       afterLoad: function (index, nextIndex, direction) {
         // zero animation
         if (nextIndex.index === 0) {
@@ -414,24 +414,3 @@ $('.roadmap-progress-slider').slick({
 });
 
 progressMobileItem.forEach((item, index) => {});
-
-
-// $(function(){
-//   $('a[href^="#"]').on('click', function(event) {
-//     // отменяем стандартное действие
-//     event.preventDefault();
-    
-//     var sc = $(this).attr("href"),
-//         dn = $(sc).offset().top;
-//     /*
-//     * sc - в переменную заносим информацию о том, к какому блоку надо перейти
-//     * dn - определяем положение блока на странице
-//     */
-    
-//     $('html, body').animate({scrollTop: dn}, 1000);
-    
-//     /*
-//     * 1000 скорость перехода в миллисекундах
-//     */
-//   });
-// });

@@ -74,7 +74,6 @@
   .roadmap-progress-wrapper {
     justify-content: space-around;
   }
-
 }
 
 @media (max-width: 800px) {
@@ -197,6 +196,19 @@
   .fp-completely .fp-tableCell {
     transform: none !important;
     height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dexilion-roadmap-title {
+    display: inline-block;
+    animation: none;
+    left: 0;
+  }
+
+  .dexilion-roadmap {
+    min-height: 400px;
+    height: unset;
   }
 }
 

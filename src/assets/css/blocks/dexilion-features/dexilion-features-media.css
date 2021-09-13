@@ -20,9 +20,15 @@
     opacity: 1;
   }
 
+  .dexilion-features-title {
+    left: 0;
+    animation: none;
+  }
+
   .features-item.animate__animated.animate__fadeInUp.active {
     opacity: 1;
     transform: none!important;
+    animation: none;
   }
 }
 

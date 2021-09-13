@@ -22,6 +22,16 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer-promo,
+  .footer-information,
+  .footer-information-item {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (max-width: 660px) {
   .section-footer {
     height: auto;
