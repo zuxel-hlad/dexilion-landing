@@ -124,9 +124,15 @@
   .dexilion-how.step-2,
   .dexilion-how.step-3,
   .dexilion-how.step-4 {
-    padding: 0;
     height: auto!important;
   }
+  .dexilion-how.step-2,
+  .dexilion-how.step-3,
+  .dexilion-how.step-4 .dexilion-mobile-titles {
+    margin: 0;
+  }
+
+
   .dexilion-step-item.sell-derivatives {
     padding: 50px 0 0 0;
   }
@@ -148,9 +154,6 @@
     opacity: 1;
   }
 
-  .dexilion-mobile-titles {
-    margin: 0;
-  }
 }
 @media (max-width: 576px) {
   .step-counter {

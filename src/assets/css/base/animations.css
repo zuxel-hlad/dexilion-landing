@@ -79,15 +79,9 @@
 }
 
 @media (max-width: 768px) {
-  .second-number .hide-block.active {
+  .hide-block {
     animation: none;
-    opacity: 1;
-    visibility: visible;
-  }
-  .first-number .hide-block.active {
-    animation: none;
-    opacity: 1;
-    visibility: visible;
+    height: 0!important;
   }
 
   .dexilion-roadmap-title .dexilion-counter {

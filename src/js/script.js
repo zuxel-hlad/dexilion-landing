@@ -1,58 +1,4 @@
 $(document).ready(function () {
-  // jQuery.fn.extend({
-  //   onAppearanceAddClass: function (class_to_add) {
-  //     let $window = $(window),
-  //       window_height = $window.height(),
-  //       array_of_$elements = [];
-  //     this.each(function (i, el) {
-  //       array_of_$elements.push($(el));
-  //     });
-  //     scrollHandler();
-  //     if (array_of_$elements.length) {
-  //       $window
-  //         .on('resize', resizeHandler)
-  //         .on('resize', scrollHandler)
-  //         .on('scroll', scrollHandler);
-  //     }
-
-  //     function resizeHandler() {
-  //       window_height = $window.height();
-  //     }
-
-  //     function watchProcessedElements(array_of_indexes) {
-  //       let l, i;
-  //       for (l = array_of_indexes.length, i = l - 1; i > -1; --i) {
-  //         array_of_$elements.splice(array_of_indexes[i], 1);
-  //       }
-  //       if (!array_of_$elements.length) {
-  //         $window
-  //           .off('resize', resizeHandler)
-  //           .off('scroll', scrollHandler)
-  //           .off('resize', scrollHandler);
-  //       }
-  //     }
-
-  //     function scrollHandler() {
-  //       let i,
-  //         l,
-  //         processed = [];
-  //       for (l = array_of_$elements.length, i = 0; i < l; ++i) {
-  //         if (
-  //           $window.scrollTop() + window_height >
-  //           array_of_$elements[i].offset().top
-  //         ) {
-  //           array_of_$elements[i].addClass(class_to_add);
-  //           processed.push(i);
-  //         }
-  //       }
-  //       if (processed.length) {
-  //         watchProcessedElements(processed);
-  //       }
-  //     }
-
-  //     return this;
-  //   },
-  // });
 
   const $isAnimatedFirstTextBlock = $('.first .hero-text'),
     $heroRoundBlock = $('.first .hero-img-round.is-animated'),
@@ -337,34 +283,6 @@ $(document).ready(function () {
   }
 
   initFullpage();
-
-  // function destroyFullpage() {
-  //   $.fn.fullpage.destroy();
-  // }
-
-  // if ($(window).width() > 768) {
-  //   initFullpage();
-  // }
-
-  // if($(window).width() <= 768) {
-  //   destroyFullpage();
-  // }
-
-  // /* dex footer animation */
-
-  // if ($(window).width() < 768) {
-  //   // $('.dexilion-features').onAppearanceAddClass('active');
-  // }
-
-  // $(window).resize(function () {
-  //   // if ($(window).width() < 768) {
-  //   //   destroyFullpage();
-  //   // }
-
-  //   if ($(window).width() > 768) {
-  //     initFullpage();
-  //   }
-  // });
 });
 
 /* mobile burger */
