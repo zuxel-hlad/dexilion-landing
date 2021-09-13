@@ -5,6 +5,14 @@
 }
 
 @media (max-width: 1300px) {
+  .dexilion-roadmap {
+    align-items: flex-start;
+  }
+
+  .progress-item {
+    margin: 0 0 10px 0;
+  }
+
   .progress-item:nth-child(6),
   .progress-item:nth-child(7),
   .progress-item:nth-child(8),
@@ -14,18 +22,7 @@
   }
 
   .progress-item:nth-child(6) {
-    margin: 0 0 10px 0;
     border-radius: 4px;
-  }
-  .progress-item:nth-child(9) {
-    margin: 0 0 10px 0;
-  }
-
-  .progress-item {
-    margin: 0 0 10px 0;
-  }
-  .progress-item:last-child {
-    margin: 0 auto 10px 0;
   }
 
   .progress-item:nth-child(6) .progress-item-line,
@@ -80,10 +77,6 @@
 @media (max-width: 1050px) {
   .roadmap-progress-wrapper {
     justify-content: space-around;
-  }
-
-  .progress-item:last-child {
-    margin: 0 0 10px 0;
   }
 }
 
