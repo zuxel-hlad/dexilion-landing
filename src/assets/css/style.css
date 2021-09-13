@@ -16,6 +16,16 @@
   background-color: var(--bg-main-color);
 }
 
+@media (max-width: 768px) {
+  .fp-tableCell {
+    height: unset !important;
+    min-height: 200px !important;
+  }
+  .fp-scrollable {
+    height: auto!important;
+  }
+}
+
 :root {
   --bg-main-color: #111222;
   --main-gray-color: #a4a5af;

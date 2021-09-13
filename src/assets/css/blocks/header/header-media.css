@@ -107,6 +107,9 @@
   }
 }
 @media (max-width: 768px) {
+  .header {
+    animation: none;
+  }
 }
 @media (max-width: 576px) {
   .header-nav-wrapper {

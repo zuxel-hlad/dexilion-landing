@@ -34,7 +34,6 @@
   height: 0;
 }
 
-
 /* keyFrames */
 @keyframes size-animation {
   from {
@@ -79,3 +78,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hide-block {
+    animation: none;
+    height: 0!important;
+  }
+
+  .dexilion-roadmap-title .dexilion-counter {
+    left: unset;
+  }
+}
