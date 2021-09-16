@@ -18,16 +18,19 @@
 }
 
 .header-logo {
-  width: 98px;
+  max-width: 117px;
+  max-height: 26px;
 }
 
 .header-logo-link {
   display: block;
   text-decoration: none;
+  line-height: 0;
 }
 
 .header-logo img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .header-nav-wrapper {
@@ -88,5 +91,5 @@
 }
 
 .demo-btn {
-  margin: 0 0 0 65px;
+  margin: 0 0 0 127px;
 }

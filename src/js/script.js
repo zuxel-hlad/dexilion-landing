@@ -209,7 +209,7 @@ $(document).ready(function () {
       scrollOverflow: true,
       scrollingSpeed: 1000,
       responsiveWidth: 769,
-      anchors: ['dexilion-hero'],
+      anchors: ['general'],
       afterLoad: function (index, nextIndex, direction) {
         // zero animation
         if (nextIndex.index === 0) {

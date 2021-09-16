@@ -186,6 +186,7 @@
 }
 
 .progress-item-descr {
+  margin: 12px 0 0 0;
   transition: 0.5s all;
   color: var(--main-gray-color);
   font-size: 16px;
