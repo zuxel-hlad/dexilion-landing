@@ -31,7 +31,7 @@
 }
 
 .second-number .hide-block.active {
-  animation: size-animation 1s linear .2s;
+  animation: size-animation 1s linear .3s;
   height: 0;
 }
 
