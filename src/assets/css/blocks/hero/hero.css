@@ -16,6 +16,7 @@
 .hero-text {
   max-width: 609px;
   position: relative;
+  z-index: 1;
 }
 
 .hero-title-sub-text {
@@ -72,7 +73,7 @@
   max-height: 131px;
   top: 8px;
   right: 476px;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 
 .star-line-2 {
@@ -80,7 +81,7 @@
   max-height: 62px;
   top: 20px;
   right: 230px;
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 
 .star-line-3 {
@@ -88,7 +89,7 @@
   max-height: 131px;
   top: 0;
   right: 0;
-  animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
 
 .star-line-4 {
@@ -96,7 +97,7 @@
   max-height: 131px;
   bottom: 0;
   left: 0;
-  animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
 
 .star-line-5 {
@@ -104,7 +105,7 @@
   max-height: 75px;
   left: 242px;
   bottom: 36px;
-  animation-delay: 0.6s;
+  animation-delay: 0.8s;
 }
 
 .star-line-6 {
@@ -112,7 +113,7 @@
   max-height: 131px;
   right: 106px;
   bottom: 0;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 
 .star-line-7 {
@@ -120,7 +121,7 @@
   max-height: 68px;
   top: 298px;
   right: 0;
-  animation-delay: 0.6s;
+  animation-delay: 0.8s;
 }
 
 /* hero line order styles */

@@ -105,27 +105,26 @@
 }
 
 @media (max-width: 768px) {
-
-  .fp-section.fp-table, .fp-slide.fp-table {
-    height: unset!important;
+  .fp-section.fp-table,
+  .fp-slide.fp-table {
+    height: unset !important;
   }
   .dexilion-how {
     padding: 60px 0 0 0;
-    height: auto!important;
-    min-height: unset!important;
+    height: auto !important;
+    min-height: unset !important;
     align-items: flex-start;
   }
   .dexilion-how.step-2,
   .dexilion-how.step-3,
   .dexilion-how.step-4 {
-    height: auto!important;
+    height: auto !important;
   }
   .dexilion-how.step-2,
   .dexilion-how.step-3,
   .dexilion-how.step-4 .dexilion-mobile-titles {
     margin: 0;
   }
-
 
   .dexilion-step-item.sell-derivatives {
     padding: 50px 0 0 0;
@@ -147,7 +146,6 @@
     transform: none;
     opacity: 1;
   }
-
 }
 @media (max-width: 576px) {
   .step-counter {
@@ -234,5 +232,18 @@
 @media (max-width: 350px) {
   .step-text-wrapper {
     margin: 65px 0 0 0;
+  }
+
+  .step-sub-img.deposit-funds {
+    right: -75px;
+  }
+
+  .step-image-general.sell-derivatives {
+    max-width: 250px;
+  }
+
+  .slick-dots {
+    width: 100%;
+    max-width: 320px;
   }
 }

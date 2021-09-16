@@ -22,6 +22,12 @@
   }
 }
 
+@media (max-width: 1150px) {
+  .hero-img {
+    width: 65%;
+  }
+}
+
 @media (max-width: 1100px) {
   .hero-title-img {
     width: 158px;
@@ -66,11 +72,16 @@
     max-width: 550px;
   }
   .hero-img {
+    padding: 0 0 80px 0;
     margin: 0 auto;
     position: relative;
     transform: none;
     width: 759px;
     overflow: hidden;
+  }
+
+  .hero-brand-logo {
+    top: 20%;
   }
 
   .hero-img-round {
@@ -164,13 +175,19 @@
 
 @media (max-width: 550px) {
   .dexilion-hero {
-    background: url('../../../img/hero-bg.png') center 70% / 90% no-repeat;
+    background: url('../../../img/hero-bg.png') center center/80% no-repeat;
   }
   .hero-try {
     margin: 0;
     position: absolute;
     bottom: -380px;
     width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .dexilion-hero {
+    background-size: contain;
   }
 }
 
