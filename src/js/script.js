@@ -196,12 +196,15 @@ $(document).ready(function () {
     });
   };
 
+
+
   function initFullpage() {
     $('.fullpage-wrapper').fullpage({
       licenseKey: null,
       scrollOverflow: true,
       scrollingSpeed: 1000,
       responsiveWidth: 769,
+      anchors: ['dexilion-hero'],
       afterLoad: function (index, nextIndex, direction) {
         // zero animation
         if (nextIndex.index === 0) {
@@ -329,4 +332,3 @@ $('.roadmap-progress-slider').slick({
   dots: true,
 });
 
-progressMobileItem.forEach((item, index) => {});

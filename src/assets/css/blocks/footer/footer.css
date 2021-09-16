@@ -47,6 +47,10 @@
   max-width: 98px;
 }
 
+.footer-logo-link {
+  display: block;
+}
+
 .footer-logo img {
   max-width: 100%;
 }
