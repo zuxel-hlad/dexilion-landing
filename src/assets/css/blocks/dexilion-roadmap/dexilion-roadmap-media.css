@@ -1,9 +1,3 @@
-@media (max-width: 1750px) {
-  .dexilion-roadmap {
-    padding: 112px 0 0 0;
-  }
-}
-
 @media (max-width: 1300px) {
   .dexilion-roadmap {
     align-items: flex-start;

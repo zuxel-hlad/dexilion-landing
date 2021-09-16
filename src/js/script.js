@@ -3,7 +3,6 @@ $(document).ready(function () {
     $heroRoundBlock = $('.first .hero-img-round.is-animated'),
     $heroStarsBlock = $('.first .hero-img-stars.is-animated'),
     $aboutDexCard = $('.second .about-card.is-animated');
-
   /* title counter functions */
   const sectionCounterAddActive = (sectionName) => {
     $(`${sectionName} .dexilion-counter .hide-block`).addClass('active');
@@ -66,6 +65,7 @@ $(document).ready(function () {
       .addEventListener('mousewheel', (e) => {
         let delta = 0;
         if (e.deltaY > delta) {
+          $('.dexilion-features-title').addClass('animate__animated animate__fadeOutUp');
           $('.features-item')
             .eq(3)
             .addClass('animate__animated animate__fadeInUp active');
@@ -180,9 +180,9 @@ $(document).ready(function () {
         .eq(index)
         .addClass('animate__animated animate__fadeInUp active');
       $('.footer-information-item').eq(0).css('animation-delay', '.1s');
-      $('.footer-information-item').eq(1).css('animation-delay', '.3s');
-      $('.footer-information-item').eq(2).css('animation-delay', '.5s');
-      $('.footer-information-item').eq(3).css('animation-delay', '.7s');
+      $('.footer-information-item').eq(1).css('animation-delay', '.5s');
+      $('.footer-information-item').eq(2).css('animation-delay', '.6s');
+      $('.footer-information-item').eq(3).css('animation-delay', '.9s');
     });
   };
   const dexFooterAnimateRemove = () => {
@@ -196,7 +196,12 @@ $(document).ready(function () {
     });
   };
 
-
+  const scrollPause = () => {
+    $.fn.fullpage.setAllowScrolling(false);
+    setTimeout(() => {
+      $.fn.fullpage.setAllowScrolling(true);
+    }, 2500);
+  };
 
   function initFullpage() {
     $('.fullpage-wrapper').fullpage({
@@ -217,12 +222,14 @@ $(document).ready(function () {
           $heroRoundBlock.eq(0).css('animation-delay', '1s');
           $heroStarsBlock.addClass('animate__animated animate__fadeInTopRight');
           $heroStarsBlock.eq(0).css('animation-delay', '2s');
+          scrollPause();
         }
         // first animation
         if (nextIndex.index === 1) {
           addTitleActiveClass('.about-dexilion-title');
           sectionCounterAddActive('.about-dexilion');
           dexCardAnimation();
+          scrollPause();
         } else {
           removeTitleActiveClass('.about-dexilion-title');
           sectionCounterRemoveActive('.about-dexilion');
@@ -234,18 +241,23 @@ $(document).ready(function () {
           sectionCounterAddActive('.dexilion-features-title');
           dexItemsAnimation();
           dexItemsAnimationOnScroll();
+          scrollPause();
         } else if (nextIndex.index < 2) {
           removeTitleActiveClass('.dexilion-features-title');
           sectionCounterRemoveActive('.dexilion-features-title');
           dexItemsAnimationRemove();
+          $('.dexilion-features-title').removeClass('animate__animated animate__fadeOutUp');
+          scrollPause();
         } else {
           removeTitleActiveClass('.dexilion-features-title');
           sectionCounterRemoveActive('.dexilion-features-title');
+          $('.dexilion-features-title').removeClass('animate__animated animate__fadeOutUp');
         }
         if (nextIndex.index === 3) {
           addTitleActiveClass('.dexilion-how-title');
           sectionCounterAddActive('.dexilion-how-title');
           dexStepssAnimation(0);
+          scrollPause();
         } else {
           removeTitleActiveClass('.dexilion-how-title');
           sectionCounterRemoveActive('.dexilion-how-title');
@@ -253,16 +265,19 @@ $(document).ready(function () {
         }
         if (nextIndex.index === 4) {
           dexStepssAnimation(1);
+          scrollPause();
         } else {
           dexStepssAnimationRemove(1);
         }
         if (nextIndex.index === 5) {
           dexStepssAnimation(2);
+          scrollPause();
         } else {
           dexStepssAnimationRemove(2);
         }
         if (nextIndex.index === 6) {
           dexStepssAnimation(3);
+          scrollPause();
         } else {
           dexStepssAnimationRemove(3);
         }
@@ -270,6 +285,7 @@ $(document).ready(function () {
           addTitleActiveClass('.dexilion-roadmap-title');
           sectionCounterAddActive('.dexilion-roadmap-title');
           progressItemanimation();
+          scrollPause();
         } else {
           removeTitleActiveClass('.dexilion-roadmap-title');
           sectionCounterRemoveActive('.dexilion-roadmap-title');
@@ -277,6 +293,7 @@ $(document).ready(function () {
         }
         if (nextIndex.index === 8) {
           dexFooterAnimate();
+          scrollPause();
         } else {
           dexFooterAnimateRemove();
         }
@@ -331,4 +348,3 @@ $('.roadmap-progress-slider').slick({
   initialSlide: 0,
   dots: true,
 });
-
