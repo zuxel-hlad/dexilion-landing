@@ -1,7 +1,6 @@
 $(document).ready(function () {
   const $isAnimatedFirstTextBlock = $('.first .hero-text'),
     $heroRoundBlock = $('.first .hero-img-round.is-animated'),
-    $heroStarsBlock = $('.first .hero-img-stars.is-animated'),
     $aboutDexCard = $('.second .about-card.is-animated');
   /* title counter functions */
   const sectionCounterAddActive = (sectionName) => {
@@ -220,8 +219,6 @@ $(document).ready(function () {
           $isAnimatedFirstTextBlock.eq(0).css('animation-duration', '.5s');
           $heroRoundBlock.addClass('animate__animated animate__fadeInLeft');
           $heroRoundBlock.eq(0).css('animation-delay', '1s');
-          $heroStarsBlock.addClass('animate__animated animate__fadeInTopRight');
-          $heroStarsBlock.eq(0).css('animation-delay', '2s');
           scrollPause();
         }
         // first animation
