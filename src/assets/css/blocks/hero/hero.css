@@ -49,6 +49,14 @@
   left: 0;
 }
 
+.hero-brand-logo {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* hero line order styles */
 .star-line {
   position: absolute;
@@ -63,7 +71,7 @@
   max-width: 174px;
   max-height: 131px;
   top: 8px;
-  left: 109px;
+  right: 476px;
   animation-delay: 0.5s;
 }
 
@@ -71,7 +79,7 @@
   max-width: 82px;
   max-height: 62px;
   top: 20px;
-  left: 446px;
+  right: 230px;
   animation-delay: 0.3s;
 }
 
@@ -79,7 +87,7 @@
   max-width: 174px;
   max-height: 131px;
   top: 0;
-  left: 581px;
+  right: 0;
   animation-delay: 0.4s;
 }
 
@@ -102,7 +110,7 @@
 .star-line-6 {
   max-width: 174px;
   max-height: 131px;
-  left: 479px;
+  right: 106px;
   bottom: 0;
   animation-delay: 0.5s;
 }
@@ -111,8 +119,8 @@
   max-width: 90px;
   max-height: 68px;
   top: 298px;
-  left: 669px;
-  animation-delay: 0.7s;
+  right: 0;
+  animation-delay: 0.6s;
 }
 
 /* hero line order styles */
