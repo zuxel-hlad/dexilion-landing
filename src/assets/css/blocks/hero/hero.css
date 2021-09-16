@@ -45,6 +45,8 @@
   width: 100%;
   min-height: 100%;
   position: relative;
+  top: 0;
+  left: 0;
 }
 
 /* hero line order styles */
@@ -62,6 +64,7 @@
   max-height: 131px;
   top: 8px;
   left: 109px;
+  animation-delay: 0.5s;
 }
 
 .star-line-2 {
@@ -69,6 +72,7 @@
   max-height: 62px;
   top: 20px;
   left: 446px;
+  animation-delay: 0.3s;
 }
 
 .star-line-3 {
@@ -76,6 +80,7 @@
   max-height: 131px;
   top: 0;
   left: 581px;
+  animation-delay: 0.4s;
 }
 
 .star-line-4 {
@@ -83,6 +88,7 @@
   max-height: 131px;
   bottom: 0;
   left: 0;
+  animation-delay: 0.4s;
 }
 
 .star-line-5 {
@@ -90,6 +96,7 @@
   max-height: 75px;
   left: 242px;
   bottom: 36px;
+  animation-delay: 0.6s;
 }
 
 .star-line-6 {
@@ -97,6 +104,7 @@
   max-height: 131px;
   left: 479px;
   bottom: 0;
+  animation-delay: 0.5s;
 }
 
 .star-line-7 {
@@ -104,6 +112,7 @@
   max-height: 68px;
   top: 298px;
   left: 669px;
+  animation-delay: 0.7s;
 }
 
 /* hero line order styles */
