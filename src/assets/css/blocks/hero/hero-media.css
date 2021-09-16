@@ -175,13 +175,18 @@
 
 @media (max-width: 550px) {
   .dexilion-hero {
-    background: url('../../../img/hero-bg.png') center center/80% no-repeat;
+    background: url('../../../img/hero-bg.png') center 60%/80% no-repeat;
   }
   .hero-try {
     margin: 0;
     position: absolute;
-    bottom: -380px;
+    bottom: 0;
     width: 100%;
+  }
+
+  .hero-wrapper {
+    align-items: initial;
+    min-height: 550px;
   }
 }
 
@@ -191,14 +196,9 @@
   }
 }
 
-@media (max-width: 360px) {
-  .hero-try {
-    bottom: -290px;
-  }
-}
-
 @media (max-width: 320px) {
-  .hero-try {
-    bottom: 0;
+  .hero-wrapper {
+    align-items: initial;
+    min-height: 500px;
   }
 }
