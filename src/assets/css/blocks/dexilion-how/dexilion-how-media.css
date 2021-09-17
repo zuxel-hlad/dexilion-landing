@@ -24,6 +24,11 @@
   .step-sub-img.deposit-funds {
     max-width: 280px;
   }
+
+  .step-descr {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -38,8 +43,20 @@
     line-height: 25px;
   }
 
+  .step-image-general.connect-wallet {
+    max-width: 480px;
+  }
+
   .step-sub-img.deposit-funds {
     max-width: 250px;
+  }
+
+  .step-text-wrapper {
+    padding: 55px 0 0 80px;
+  }
+
+  .step-image-general.sell-derivatives {
+    max-width: 480px;
   }
 }
 @media (max-width: 930px) {
