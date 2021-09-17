@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const $isAnimatedFirstTextBlock = $('.first .hero-text'),
-    $heroRoundBlock = $('.first .hero-img-round.is-animated'),
-    $aboutDexCard = $('.second .about-card.is-animated');
+    $heroRoundBlock = $('.first .hero-img-round'),
+    $aboutDexCard = $('.second .about-card');
   /* title counter functions */
   const sectionCounterAddActive = (sectionName) => {
     $(`${sectionName} .dexilion-counter .hide-block`).addClass('active');
@@ -64,7 +64,9 @@ $(document).ready(function () {
       .addEventListener('mousewheel', (e) => {
         let delta = 0;
         if (e.deltaY > delta) {
-          $('.dexilion-features-title').addClass('animate__animated animate__fadeOutUp');
+          $('.dexilion-features-title').addClass(
+            'animate__animated animate__fadeOutUp'
+          );
           $('.features-item')
             .eq(3)
             .addClass('animate__animated animate__fadeInUp active');
@@ -243,12 +245,16 @@ $(document).ready(function () {
           removeTitleActiveClass('.dexilion-features-title');
           sectionCounterRemoveActive('.dexilion-features-title');
           dexItemsAnimationRemove();
-          $('.dexilion-features-title').removeClass('animate__animated animate__fadeOutUp');
+          $('.dexilion-features-title').removeClass(
+            'animate__animated animate__fadeOutUp'
+          );
           scrollPause();
         } else {
           removeTitleActiveClass('.dexilion-features-title');
           sectionCounterRemoveActive('.dexilion-features-title');
-          $('.dexilion-features-title').removeClass('animate__animated animate__fadeOutUp');
+          $('.dexilion-features-title').removeClass(
+            'animate__animated animate__fadeOutUp'
+          );
         }
         if (nextIndex.index === 3) {
           addTitleActiveClass('.dexilion-how-title');

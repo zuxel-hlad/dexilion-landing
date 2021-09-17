@@ -59,6 +59,7 @@
     max-width: 480px;
   }
 }
+
 @media (max-width: 930px) {
   .reversed .step-image-wrapper {
     padding: 0 165px 0 10px;
