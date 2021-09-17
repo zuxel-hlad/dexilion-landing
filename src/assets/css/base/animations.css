@@ -81,7 +81,7 @@
 
 @media (max-width: 768px) {
   .hide-block {
-    animation: none;
+    animation: none!important;
     height: 0 !important;
   }
 
