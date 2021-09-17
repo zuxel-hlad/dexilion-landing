@@ -73,4 +73,5 @@
   line-height: 30px;
   color: var(--main-gray-color);
   transition: 0.5s all;
+  max-width: 550px;
 }
