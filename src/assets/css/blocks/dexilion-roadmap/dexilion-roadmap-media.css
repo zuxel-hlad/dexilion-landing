@@ -194,11 +194,6 @@
 }
 
 @media (max-width: 768px) {
-  .dexilion-roadmap-title {
-    display: inline-block;
-    animation: none;
-    left: 0;
-  }
 
   .dexilion-roadmap {
     padding: 60px 0 0 0;

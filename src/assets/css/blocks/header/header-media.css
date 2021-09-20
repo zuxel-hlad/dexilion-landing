@@ -101,6 +101,7 @@
   }
 
   .burger-menu {
+    cursor: pointer;
     display: flex;
   }
 }

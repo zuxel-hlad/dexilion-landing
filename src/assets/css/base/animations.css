@@ -14,7 +14,7 @@
   top: 0;
   background-color: var(--bg-main-color);
   width: 100%;
-  height: 100%;
+  height: 0%;
   transition: 0.8s all;
 }
 
@@ -26,13 +26,13 @@
 }
 
 .first-number .hide-block.active {
-  animation: size-animation 1s linear;
-  height: 0;
+  /* animation: size-animation 1s linear;
+  height: 0; */
 }
 
 .second-number .hide-block.active {
-  animation: size-animation 1s linear 0.3s;
-  height: 0;
+  /* animation: size-animation 1s linear 0.3s;
+  height: 0; */
 }
 
 /* keyFrames */
@@ -80,22 +80,5 @@
 }
 
 @media (max-width: 768px) {
-  .hide-block {
-    animation: none !important;
-    height: 0 !important;
-  }
 
-  .first-number .hide-block.active {
-    animation: none !important;
-    height: 0;
-  }
-
-  .second-number .hide-block.active {
-    animation: none !important;
-    height: 0;
-  }
-
-  .dexilion-roadmap-title .dexilion-counter {
-    left: unset;
-  }
 }

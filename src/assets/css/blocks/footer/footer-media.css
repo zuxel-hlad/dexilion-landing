@@ -29,15 +29,6 @@
   .footer {
     padding: 60px 0;
   }
-
-  .footer-promo,
-  .footer-information,
-  .footer-information-item {
-    animation: none;
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-  }
 }
 
 @media (max-width: 660px) {

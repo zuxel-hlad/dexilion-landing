@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   animation: down 0.8s ease-out;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: var(--bg-main-color);
   min-height: 80px;

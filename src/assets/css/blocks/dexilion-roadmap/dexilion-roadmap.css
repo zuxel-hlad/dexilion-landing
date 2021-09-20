@@ -10,11 +10,6 @@
 .dexilion-roadmap-title {
   position: relative;
   display: inline-block;
-  left: -100%;
-}
-
-.dexilion-roadmap-title.active {
-  left: 0;
 }
 
 .dexilion-roadmap-title .dexilion-counter {
@@ -45,8 +40,6 @@
   cursor: pointer;
   transition: 0.5s all;
   border: 1px solid transparent;
-  opacity: 0;
-  visibility: hidden;
 }
 
 .progress-item-line {
@@ -143,12 +136,6 @@
   cursor: pointer;
   transition: 0.5s all;
   border: 1px solid transparent;
-}
-
-.progress-item.active {
-  opacity: 1;
-  visibility: visible;
-  transition: 0.5s all;
 }
 
 .progress-item:hover {

@@ -3,6 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero-wrapper {
@@ -16,7 +17,6 @@
 .hero-text {
   max-width: 609px;
   position: relative;
-  z-index: 1;
 }
 
 .hero-title-sub-text {
@@ -26,6 +26,7 @@
 .hero-title-img {
   width: 185px;
   margin: 0 0 0 10px;
+  overflow: hidden;
 }
 
 .hero-img {

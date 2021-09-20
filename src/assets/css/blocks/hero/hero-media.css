@@ -128,10 +128,6 @@
     background: url('../../../img/hero-bg.png') center 90%/70% no-repeat;
   }
 
-  .hero-text {
-    animation: none;
-  }
-
   .hero-img {
     display: none;
   }

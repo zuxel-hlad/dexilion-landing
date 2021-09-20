@@ -123,21 +123,11 @@
 }
 
 @media (max-width: 768px) {
-  .fp-section.fp-table,
-  .fp-slide.fp-table {
-    height: unset !important;
-  }
   .dexilion-how {
     padding: 60px 0 0 0;
-    height: auto !important;
-    min-height: unset !important;
     align-items: flex-start;
   }
-  .dexilion-how.step-2,
-  .dexilion-how.step-3,
-  .dexilion-how.step-4 {
-    height: auto !important;
-  }
+  
   .dexilion-how.step-2,
   .dexilion-how.step-3,
   .dexilion-how.step-4 .dexilion-mobile-titles {
@@ -150,19 +140,6 @@
 
   .dexilion-step-item.sell-derivatives .step-descr {
     margin: 40px 0 0 0;
-  }
-
-  .dexilion-how-title {
-    left: 0;
-    animation: none;
-  }
-
-  .step-image-general,
-  .step-sub-img,
-  .step-text-wrapper {
-    animation: none;
-    transform: none;
-    opacity: 1;
   }
 }
 @media (max-width: 576px) {

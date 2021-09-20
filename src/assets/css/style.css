@@ -12,20 +12,6 @@
 @import './blocks/burger/burger.css';
 @import './responsive.css';
 
-.fullpage-wrapper {
-  background-color: var(--bg-main-color);
-}
-
-@media (max-width: 768px) {
-  .fp-tableCell {
-    height: unset !important;
-    min-height: 200px !important;
-  }
-  .fp-scrollable {
-    height: auto!important;
-  }
-}
-
 
 :root {
   --bg-main-color: #111222;

@@ -111,17 +111,6 @@
   .about-dexilion {
     padding: 60px 0 0 0;
   }
-
-  .about-dexilion-title {
-    animation: none;
-    left: 0;
-  }
-
-  .about-card {
-    animation: none;
-    transform: none;
-  }
-
 }
 
 @media (max-width: 576px) {
