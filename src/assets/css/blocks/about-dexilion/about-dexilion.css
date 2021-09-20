@@ -10,6 +10,7 @@
 .about-dexilion-title {
   position: relative;
   display: inline-block;
+  animation-duration: .7s;
 }
 
 .about-card-wrapper {
@@ -25,6 +26,16 @@
   border: 1px solid var(--main-border-color);
   border-radius: 8px;
   cursor: pointer;
+}
+
+.about-card.exchange {
+  animation-delay: .5s;
+  animation-duration: .7s;
+}
+
+.about-card.organization {
+  animation-delay: .6s;
+  animation-duration: .7s;
 }
 
 

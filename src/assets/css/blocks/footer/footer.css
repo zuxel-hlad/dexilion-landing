@@ -77,6 +77,20 @@
   min-height: 100%;
 }
 
+.footer-information-item.knowledge-base {
+  animation-delay: .1s;
+}
+.footer-information-item.documents {
+  animation-delay: .3s;
+}
+.footer-information-item.legal-and-privacy{
+  animation-delay: .4s;
+}
+.footer-information-item.community {
+  animation-delay: .7s;
+  animation-duration: .8s;
+}
+
 .footer-information-item-title {
   font-size: 20px;
   font-weight: 700;

@@ -63,3 +63,7 @@ $(document).ready(function () {
     dots: true,
   });
 });
+
+/* WOW js animations */
+
+new WOW().init();

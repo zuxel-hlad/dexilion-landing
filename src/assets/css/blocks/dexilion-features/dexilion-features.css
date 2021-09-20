@@ -10,6 +10,7 @@
 .dexilion-features-title {
   position: relative;
   display: inline-block;
+  animation-duration: .7s;
 }
 
 .features-items-wrapper {

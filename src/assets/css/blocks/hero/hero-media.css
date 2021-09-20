@@ -126,6 +126,7 @@
     padding: 112px 0 0 0;
     height: 700px;
     background: url('../../../img/hero-bg.png') center 90%/70% no-repeat;
+    background-color: var(--bg-main-color);
   }
 
   .hero-img {
