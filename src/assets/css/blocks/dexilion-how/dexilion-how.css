@@ -3,15 +3,17 @@
   background-color: var(--bg-main-color);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  min-height: 750px;
 }
 
-.dexilion-how.step-2,
+.dexilion-how.step-2 {
+  padding: 0;
+}
+
 .dexilion-how.step-3,
 .dexilion-how.step-4 {
   padding:  150px 0 0 0;
-  height: auto;
-  min-height: unset;
 }
 
 .dexilion-how-title {
