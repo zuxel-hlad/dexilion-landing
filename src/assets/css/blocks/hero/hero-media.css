@@ -173,6 +173,7 @@
 @media (max-width: 550px) {
   .dexilion-hero {
     background: url('../../../img/hero-bg.png') center 60%/80% no-repeat;
+    background-color: var(--bg-main-color);
   }
   .hero-try {
     margin: 0;

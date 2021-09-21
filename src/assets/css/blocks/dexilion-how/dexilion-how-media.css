@@ -143,6 +143,9 @@
   }
 }
 @media (max-width: 576px) {
+  .dexilion-how {
+    min-height: unset;
+  }
   .step-counter {
     font-size: 14px;
   }

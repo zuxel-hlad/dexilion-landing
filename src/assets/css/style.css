@@ -10,8 +10,8 @@
 @import './blocks/footer/footer.css';
 @import './base/animations.css';
 @import './blocks/burger/burger.css';
+@import './blocks/dexilion-counter/dexilion-counter.css';
 @import './responsive.css';
-
 
 :root {
   --bg-main-color: #111222;
