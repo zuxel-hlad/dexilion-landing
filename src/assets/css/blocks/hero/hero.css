@@ -1,9 +1,10 @@
 .dexilion-hero {
+  padding: 150px 0 0 0;
   background-color: var(--bg-main-color);
-  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
+  min-height: 810px;
 }
 
 .hero-wrapper {
@@ -18,7 +19,7 @@
   max-width: 609px;
   position: relative;
   animation-delay: 1.5s;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
 }
 
 .hero-title-sub-text {
@@ -42,7 +43,7 @@
 }
 
 .hero-img-round {
-  animation-delay: 1.1s;
+  animation-delay: 1.5s;
 }
 
 .hero-title-img img {
@@ -153,7 +154,6 @@
 }
 
 .hero-img-line.line-first {
-  visibility: hidden;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
@@ -161,7 +161,6 @@
 }
 
 .hero-img-line.line-second {
-  visibility: hidden;
   z-index: 2;
   top: 50%;
   transform: translateY(-50%);
@@ -169,7 +168,6 @@
 }
 
 .hero-img-line.line-third {
-  visibility: hidden;
   z-index: 3;
   top: 50%;
   transform: translateY(-50%);
@@ -206,7 +204,7 @@
 }
 
 .hero-img-round svg {
-  animation: scale 1s ease-in-out 0.5s;
+  animation: scale 1.1s ease-in-out 1.5s;
   -webkit-box-shadow: 0px 0px 100px 27px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 100px 27px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 100px 27px rgba(0, 0, 0, 0.2);

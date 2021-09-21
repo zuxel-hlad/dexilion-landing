@@ -1,20 +1,12 @@
 .dexilion-how {
-  padding: 150px 0 150px 0;
+  padding: 120px 0 0 0;
   background-color: var(--bg-main-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 750px;
+
 }
 
-.dexilion-how.step-2 {
-  padding: 0;
-}
-
-.dexilion-how.step-3,
-.dexilion-how.step-4 {
-  padding:  150px 0 0 0;
-}
 
 .dexilion-how-title {
   position: relative;
@@ -137,10 +129,6 @@
   right: -40px;
 }
 
-.dexilion-step-item.deposit-funds {
-  padding: 115px 0 0 0;
-}
-
 .step-image-general.deposit-funds {
   max-width: 392px;
   z-index: 1;
@@ -151,10 +139,6 @@
   top: 40px;
   right: -236px;
   z-index: -1;
-}
-
-.dexilion-step-item.sell-derivatives {
-  padding: 80px 0 0 0;
 }
 
 .step-image-general.sell-derivatives {
