@@ -76,12 +76,6 @@ $(document).ready(function () {
     initialSlide: 0,
     dots: true,
   });
-  $('html').niceScroll({
-    cursorcolor: 'var( --main-gray-color)',
-    background: 'var( --main-border-color)',
-    autohidemode: 'false',
-    cursorborder: 'none',
-  });
 });
 
 /* WOW js animations */
