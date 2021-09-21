@@ -25,6 +25,11 @@
   --footer-color: #16172c;
 }
 
+
+body {
+  min-height: 500vh;
+}
+
 .container {
   width: 100%;
   max-width: 1310px;
