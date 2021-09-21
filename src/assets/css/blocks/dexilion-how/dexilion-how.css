@@ -1,10 +1,17 @@
 .dexilion-how {
-  padding: 200px 0 120px 0;
-  min-height: 100vh;
+  padding: 150px 0 150px 0;
   background-color: var(--bg-main-color);
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.dexilion-how.step-2,
+.dexilion-how.step-3,
+.dexilion-how.step-4 {
+  padding:  150px 0 0 0;
+  height: auto;
+  min-height: unset;
 }
 
 .dexilion-how-title {
@@ -156,10 +163,6 @@
   max-width: 219px;
   right: -40px;
   top: 40px;
-}
-
-.dexilion-step-item.track-position {
-  padding: 120px 0 0 0;
 }
 
 .step-image-general.track-position {
