@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
       dexilionCounter = document.querySelectorAll('.dexilion-counter');
     sectionTitles.forEach((item, i) => {
       item.addEventListener('animationend', () => {
-        console.log('works');
         dexilionCounter[i].classList.add('active');
       });
     });
